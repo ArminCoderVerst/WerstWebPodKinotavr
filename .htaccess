@@ -1,0 +1,11 @@
+#Options All -Indexes
+
+RewriteEngine On
+Options +FollowSymlinks
+RewriteCond   %{REQUEST_FILENAME} !-d
+RewriteCond   %{REQUEST_FILENAME} !-f
+
+#RewriteRule ^admin/ 1/$ admin/admin.php [SQA, L]
+
+#ErrorDocument 403 /errors/403.html
+#ErrorDocument 404 /errors/404.html
