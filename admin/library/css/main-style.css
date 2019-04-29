@@ -18,8 +18,13 @@ body
 	align-items: center;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	background-color: #F5F5F5;
+	background-color: #27272a;
 	margin: auto;
+}
+.hiden
+{
+	font-size: 13pt;
+	color: #FFFFFF;
 }
 .logo
 {
@@ -31,8 +36,23 @@ body
 }
 .wid-logo
 {
-	font-size: 25pt;
+	color: #E4E4E4 !important;
+	font-size: 22pt;
 	font-family: "Arvo";
+}
+.panel-wid
+{
+	line-height: 1.1;
+	font-size: 20pt;
+	font-family: "Arvo";
+}
+.panel
+{
+	font-weight: 500;
+	color: #ffffff;
+	background: #FF0000;
+	padding: 3px;
+	border-radius: 5px;
 }
 .form-default
 {

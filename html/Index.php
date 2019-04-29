@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="utf-8">
@@ -33,7 +33,7 @@
 				<a class="nav-link lits_1" href="#">Главная<span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle lits_1 name_kino" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Кинотеатры</a>
+				<a class="nav-link dropdown-toggle lits_1 name_kino" href="#" id="navbarDropdownKinoteatr" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Кинотеатры</a>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 					<a class="dropdown-item names_k" href="#">К-р "Калинина"</a>
 					<a class="dropdown-item names_k" href="#">К-р "Октябрь"</a>
@@ -41,7 +41,7 @@
 				</div>
 			</li>
 			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle lits_1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Обращение</a>
+				<a class="nav-link dropdown-toggle lits_1" href="#" id="navbarDropdownHelp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Обращение</a>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 			<!--Form validate-->
 				<form class="needs-validation form-row container-fluid" novalidate>
@@ -50,19 +50,19 @@
 					</div>
 					<div class="form-group col-12 col-md-10 col-lg-12">
 						<!--<label class="validationTooltip01" for="electronObrash" style="position: relative; left: 5px;">Заголовок</label>-->
-						<input type="text" class="form-control" id="electronObrash" placeholder="Заголовок" id="validationCustom01" required>
+						<input type="text" class="form-control" id="electronObrash" placeholder="Заголовок" required>
 					</div>
 					<div class="form-group col-12 col-md-10 col-lg-12">
 						<!--<label for="electronObrash" style="position: relative; left: 5px;">Ваше Имя:</label>-->
-						<input type="text" class="form-control" id="electronObrash" placeholder="Ваше Имя" id="validationCustom02" required>
+						<input type="text" class="form-control" id="electronObrash" placeholder="Ваше Имя" required>
 					</div>
 					<div class="form-group col-12 col-md-10 col-lg-12">
 						<!--<label for="electronObrash" style="position: relative; left: 5px;">Введите ваш Email:</label>-->
-						<input type="email" class="form-control" id="electronObrash validationCustom03" placeholder="Введите ваш Email" required>
+						<input type="email" class="form-control" id="electronObrash" placeholder="Введите ваш Email" required>
 					</div>
 					<div class="form-group col-12 col-md-10 col-lg-12">
 						<!--<label for="electronObrash" style="width: 70%; position: relative; left: 5px;">Текст обращения:</label>-->
-						<textarea class="form-control" id="electronObrash validationTextarea" placeholder="Текст обращения" required></textarea>
+						<textarea class="form-control" id="electronObrash" placeholder="Текст обращения" required></textarea>
 					</div>
 					<div class="form-group col-auto col-md-7">
 						<label for="electronObrash">Прикрепить файл:</label>
@@ -83,6 +83,7 @@
 			<input class="form-control mr-sm-2 col-lg-8" type="search" placeholder="Поиск" aria-label="Поиск">
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Искать</button>
 		</form>
+	  </div>
 	</nav>
 </header>
 <!--end nav penel-->
@@ -138,6 +139,7 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
+</main>
 	<!--End carusel-->
  
 <!--Aphisha kino-->
@@ -278,10 +280,10 @@
 				</div>
 				<!--End modal window-->
 
-				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#exampleModalLong_film_2" style="border-radius: 20px; opacity: 0.8;">О фильме</button>
+				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#exampleModalLong_film_1" id="films" style="border-radius: 20px; opacity: 0.8;">О фильме</button>
 
 				<!--Modal-->
-				<div class="modal fade bd-example-modal-lg" id="exampleModalLong_film_2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				<div class="modal fade bd-example-modal-lg" id="exampleModalLong_film_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-lg modal-dialog-centered">
 					<div class="modal-content">
 					<div class="modal-body">
@@ -368,8 +370,8 @@
 	  	</div>
 	  	<div class="text-center mt-2">
 				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-target="#exampleModalLong_film_1" id="raspiss" style="border-radius: 20px; opacity: 0.8;">Расписание</button>
-				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-target="#exampleModalLong_film_2" style="border-radius: 20px; opacity: 0.8;">О фильме</>
-	  </div>
+				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-target="#exampleModalLong_film_1" style="border-radius: 20px; opacity: 0.8;">О фильме</button>
+	  	</div>
     </div>
   </div> 	
  </div>
@@ -520,8 +522,8 @@
       		<button type="button" class="btn btn-outline-success btn-outline-default">C 04.09</button>
 	  	</div>
 	  	<div class="text-center mt-2">
-				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" id="raspiss">Расписание</button>		
-				<button type="button" class="btn btn-danger btn-box-shadow mt-1">О фильме</button>		
+				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" id="raspis">Расписание</button>		
+				<button type="button" class="btn btn-danger btn-box-shadow mt-1" id="films">О фильме</button>		
 			</div>
 			</div>
 		</div>
