@@ -18,13 +18,14 @@
 	
 	if (!isset($_COOKIE['token'])) {
 ?>
-	<div class="form-default text-center" method="post">
-	 	<div class="form-group needs-validation" novalidate>
+	<div class="form-default" method="post">
+	 	<div class="form-group text-center">
 	 		<a class="wid-logo"><span class="logo">K</span>inotavr.by</a>
 	 		<h5 class="hiden">Вход в систему</h5>
-	 		<div class="alert alert-danger powins" id="error" style="display: none" role="alert">Ошибка авторизации</div>
-	 		<div class="alert alert-success" id="notError" style="display: none" role="alert">Верно</div>
-	 		
+	 			<!--alert form-->
+				<div class="alert alert-danger powins" id="error" style="display: none" role="alert">Ошибка авторизации</div>
+				<div class="alert alert-success" id="notError" style="display: none" role="alert">Верно</div>
+
 	 		<input name="login" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите логин" required>	
 	 	</div>
 	 	<div class="form-group">
@@ -34,11 +35,11 @@
 	</div>
 <?php } else { 
 	$query = mysqli_query($connection, "SELECT id FROM users WHERE token='{$_COOKIE['token']}'");
-	if (mysqli_num_rows($query) > 0)
-	{
+		if (mysqli_num_rows($query) > 0)
+		{
 ?>
 <!--start container-->
-<main role="main" class="container-fluid wid">
+<main role="main" class="container-fluid">
 	<header>
 		<nav class="navbar navbar-dark bg-dark fixed-top">
 			<a href="#" class="navbar-brand panel-wid"><span class="panel">K</span>inotavr.by</a>
