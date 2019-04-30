@@ -239,10 +239,10 @@
 				<div class="text-center mt-2">
 
 				<!--Start buttons modal-->
-				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-toggle="modal" data-target=".bd-example-modal-xl" id="raspiss" style="border-radius: 20px; opacity: 0.8;">Расписание</button>
+				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-toggle="modal" data-target="#bogem" style="border-radius: 20px; opacity: 0.8;">Расписание</button>
 
 				<!--Modal window-->
-				<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal fade bd-example-modal-xl" id="bogem" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
 					<div class="modal-content">
 					  <div class="modal-header">

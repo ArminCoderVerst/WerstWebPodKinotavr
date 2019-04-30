@@ -45,15 +45,10 @@
 			<a href="#" class="navbar-brand panel-wid"><span class="panel">K</span>inotavr.by</a>
 		</nav>
 	</header>
-
-			<!-- на доработке основной контет по добавление новостей -->
-
 	<div class="text-center">
 		<button type="button" class="btn btn-primary btn-sm" id="exit">Выйти</button>
 	</div>
 </main>
-
-		
 <!--end container-->
 		<?php } else { ?>
 			Ага, конечно, ты меня взломал!

@@ -6,8 +6,6 @@
 }
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section 
 {
-	padding: 0;
-	margin: 0;
     display: block;
 }
 html, body
