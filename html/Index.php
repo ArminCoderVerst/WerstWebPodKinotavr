@@ -239,7 +239,7 @@
 				<div class="text-center mt-2">
 
 				<!--Start buttons modal-->
-				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-toggle="modal" data-target="#bogem" style="border-radius: 20px; opacity: 0.8;">Расписание</button>
+				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-toggle="modal" data-target="#bogem" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
 
 				<!--Modal window-->
 				<div class="modal fade bd-example-modal-xl" id="bogem" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
@@ -280,7 +280,7 @@
 				</div>
 				<!--End modal window-->
 
-				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#exampleModalLong_film_1" id="films" style="border-radius: 20px; opacity: 0.8;">О фильме</button>
+				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#exampleModalLong_film_1" id="films" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
 
 				<!--Modal-->
 				<div class="modal fade bd-example-modal-lg" id="exampleModalLong_film_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -325,9 +325,9 @@
       		<button type="button" class="btn btn-outline-success mt-2" style="border-radius: 15px;">C 15.09</button>
 	  	</div>
 	  	<div class="text-center mt-2">
-	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.8;">Расписание</button>
+	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
 	  		
-	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film" style="border-radius: 20px; opacity: 0.8;">О фильме</button>
+	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
 	  	</div>		
     </div>
   </div>	
@@ -347,9 +347,9 @@
       		<button type="button" class="btn btn-outline-success mt-2" style="border-radius: 15px;">C 24.09</button>
 	  	</div>
 	  	<div class="text-center mt-2">
-	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.8;">Расписание</button>
+	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
 	  		
-	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film" style="border-radius: 20px; opacity: 0.8;">О фильме</button>
+	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
 	  	</div>
     </div>
   </div>
@@ -369,8 +369,8 @@
       		<button type="button" class="btn btn-outline-success btn-outline-default" style="border-radius: 15px;">C 04.09</button>
 	  	</div>
 	  	<div class="text-center mt-2">
-				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-target="#exampleModalLong_film_1" id="raspiss" style="border-radius: 20px; opacity: 0.8;">Расписание</button>
-				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-target="#exampleModalLong_film_1" style="border-radius: 20px; opacity: 0.8;">О фильме</button>
+				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-target="#exampleModalLong_film_1" id="raspiss" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
+				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-target="#exampleModalLong_film_1" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
 	  	</div>
     </div>
   </div> 	
@@ -392,7 +392,7 @@
 	  	<div class="text-center mt-2">
 	  	
 		<!--Start buttons modal-->
-		<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-toggle="modal" data-target="#exampleModalLong_film_1" id="raspiss">Расписание</button>
+		<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-toggle="modal" data-target="#exampleModalLong_film_1" style="border-radius: 20px; opacity: 0.9;" id="raspiss">Расписание</button>
     			
 		<!--Modal window-->
 		<div class="modal fade bd-example-modal-lg" id="exampleModalLong_film_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -433,7 +433,7 @@
 		</div>
 		<!--End modal window-->
      			
-		<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#exampleModalLong_film_2">О фильме</button>
+		<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#exampleModalLong_film_2" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
 			
 		<!--Modal-->
 		<div class="modal fade bd-example-modal-lg" id="exampleModalLong_film_2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -478,9 +478,9 @@
       		<button type="button" class="btn btn-outline-success mt-2">C 15.09</button>
 	  	</div>
 	  	<div class="text-center mt-2">
-	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong">Расписание</button>
+	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
 	  		
-	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film">О фильме</button>
+	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
 	  	</div>		
     </div>
   </div>	
@@ -500,9 +500,9 @@
       		<button type="button" class="btn btn-outline-success mt-2">C 24.09</button>
 	  	</div>
 	  	<div class="text-center mt-2">
-	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong">Расписание</button>
+	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
 	  		
-	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film">О фильме</button>
+	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
 	  	</div>
     </div>
   </div>
