@@ -12,8 +12,6 @@
 	<meta name="Keywords" content="киноафиша гомеля, кино афиша гомеля, афиша гомеля, кино гомель, киноафиша гомеля октябрь, киноафиша гомеля калинина, киноафиша гомеля мир, афиша кинотеатров гомеля, афиша кинотеатра октябрь гомель, афиша кинотеатра калинина гомель, афиша кинотеатра мир гомель, киноафиша всех кинотеатров гомеля, афиша кинотеатров гомеля, расписание сеансов кинотеатров гомеля, расписание сеансов кинотеатров гомеля, афиша всех кинотеатров гомеля, киноафиша в моем городе, афиша кинотеатров в моем городе, кинотеатры гомеля, 3d кинотеатры гомеля, цены на билеты в кинотеатрах гомеля, бронирование билетов в кинотеатрах гомель, киноафиша беларуси, купить билет в кино гомель, купить билет в кинотеатр гомеля, онлайн покупка билетов в кинотеатры гомеля, афиша гомель, кинотеатр октябрь гомель, кинотеатр мир гомель, кинотеатр калинина гомель, 3d кинотеатр гомель, фильмы в кинотеатрах гомеля, премьеры в кинотеатрах гомеля, скоро в кинотеатрах гомеля, расписание кино гомель, репертуар кинотеатров гомеля, купить билет в кино гомель, видеозал гомель, детские фильмы в кинотеатрах гомеля, фильмы для детей в кинотеатрах гомеля, стоимость билета в кино гомель, стоимость билета в кинотеатрах гомеля, цена билета в кино гомель, мультфильмы в кинотеатрах гомеля, купить билет в кино онлайн гомель, бронировать место в кино гомель, купить билет в кинотеатр, мероприятия гомеля, мероприятия в кинотеатрах гомеля, акции гомеля, акции кинотеатров гомеля, сходить в кино гомель, официальный сайт кинотеатров гомеля, официальный сайт афиш кинотеатров гомеля, обсуждение кино гомель, график сеансов гомель, график премьер гомель, график показа фильмов гомель, киноманы гомеля, форум киноманов гомеля, кинотеатры гомеля, адрес кинотеатра октябрь гомель, адрес кинотеатра калинина гомель, адрес кинотеатра мир гомель, телефон кинотеатра октябрь гомель, телефон кинотеатра калинина гомель, телефон кинотеатра мир гомель, кинотеатр мир гомель, кинотеатр октябрь гомель, кинотеатр калинина гомель, сегодня в кино гомель, куп кинотавр, официальный сайт куп кинотавр, кинотавр гомель, официальная афиша гомеля, официальная киноафиша гомеля, поход в кинотеатр группой гомель, снять зал в кинотеатре гомель"/>
 	<title>Киноафиша Гомеля | Официальный сайт КУП "Кинотавр"</title>
 
-	<script src="library/jquery-3.2.1.min.js"></script>
-	<script src="library/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -42,34 +40,48 @@
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle lits_1" href="#" id="navbarDropdownHelp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Обращение</a>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			<div class="dropdown-menu dropdown-menu-castom" aria-labelledby="dropdownMenuButton">
 			<!--Form validate-->
-				<form class="needs-validation form-row container-fluid" novalidate>
+				<form id="mailForm" class="container-fluid forms-window-tab forms-window-tab-iphone-5">
+				<style>
+					@media only screen and (max-width: 1366px){
+						.forms-window-tab{
+							min-width: 20rem ;
+						}
+					}
+					@media only screen and (max-width: 320px){
+						.forms-window-tab-iphone-5{
+							min-width: 10rem;
+						}
+					}
+				</style>
 					<div class="form-group col-12 col-md-6 col-lg-6">
 						<label for="electronObrash">Обратная связь</label>
 					</div>
 					<div class="form-group col-12 col-md-10 col-lg-12">
-						<!--<label class="validationTooltip01" for="electronObrash" style="position: relative; left: 5px;">Заголовок</label>-->
-						<input type="text" class="form-control" id="electronObrash" placeholder="Заголовок" required>
+						<input type="email" id="email" name="email" placeholder="Email" class="form-control">
+						<div class="alert-danger container-fluid rounded-lg" role="alert" id="ErrorMessEmail"></div><!--electronObrash -->
 					</div>
 					<div class="form-group col-12 col-md-10 col-lg-12">
-						<!--<label for="electronObrash" style="position: relative; left: 5px;">Ваше Имя:</label>-->
-						<input type="text" class="form-control" id="electronObrash" placeholder="Ваше Имя" required>
+						<input type="text" id="name" name="name" placeholder="Введите имя" class="form-control">
+						<div class="alert-danger container-fluid rounded-lg" role="alert" id="ErrorMessName"></div>
 					</div>
 					<div class="form-group col-12 col-md-10 col-lg-12">
-						<!--<label for="electronObrash" style="position: relative; left: 5px;">Введите ваш Email:</label>-->
-						<input type="email" class="form-control" id="electronObrash" placeholder="Введите ваш Email" required>
+						<input type="phone" id="phone" name="phone" placeholder="Телефон" class="form-control">
+						<div class="alert-danger container-fluid rounded-lg" role="alert" id="ErrorMessPhone"></div>
 					</div>
 					<div class="form-group col-12 col-md-10 col-lg-12">
-						<!--<label for="electronObrash" style="width: 70%; position: relative; left: 5px;">Текст обращения:</label>-->
-						<textarea class="form-control" id="electronObrash" placeholder="Текст обращения" required></textarea>
+						<textarea name="message" id="message" placeholder="Введите сообщение" class="form-control"></textarea>
+						<div class="alert-danger container-fluid rounded-lg" role="alert" id="ErrorMessTextArea"></div>
 					</div>
+<!--
 					<div class="form-group col-auto col-md-7">
 						<label for="electronObrash">Прикрепить файл:</label>
 						<input type="file" id="electronObrash">
 					</div>
+-->
 					<div class="form-group col-auto col-md-7">
-						<button type="submit" class="btn btn-primary btn-sm">Отправить</button>
+						<button type="button" id="sendMail" class="btn btn-primary btn-sm">Отправить</button>
 					</div>
 				</form>
 				<!--End form validate-->
@@ -522,8 +534,8 @@
       		<button type="button" class="btn btn-outline-success btn-outline-default">C 04.09</button>
 	  	</div>
 	  	<div class="text-center mt-2">
-				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" id="raspis">Расписание</button>		
-				<button type="button" class="btn btn-danger btn-box-shadow mt-1" id="films">О фильме</button>		
+				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" style="border-radius: 20px; opacity: 0.9;">Расписание</button>		
+				<button type="button" class="btn btn-danger btn-box-shadow mt-1" style="border-radius: 20px; opacity: 0.9;">О фильме</button>		
 			</div>
 			</div>
 		</div>
@@ -602,6 +614,9 @@
 	</div>
 </footer>
 <!--End footer-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="library/js/bootstrap.bundle.min.js"></script>
+		<script src="../treatment.js"></script>
 			
 		<script>
 			//плавный выпад dropdown
