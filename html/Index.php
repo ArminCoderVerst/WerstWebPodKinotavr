@@ -17,88 +17,11 @@
 <body>
 
 <header>
-<!--nav panel-->
-<nav class="navbar navbar-expand-lg navbar-default navbar-light fixed-top"><!--bg-light-->
-	<a class="navbar-brand" href="#">
-		<a class="col-auto col-sm-2 col-md-2 col-lg-auto face-logo"><span class="logo">K</span>inotavr.by</a>
-	</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-				<a class="nav-link lits_1" href="#">Главная<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle lits_1 name_kino" href="#" id="navbarDropdownKinoteatr" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Кинотеатры</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item names_k" href="#">К-р "Калинина"</a>
-					<a class="dropdown-item names_k" href="#">К-р "Октябрь"</a>
-					<a class="dropdown-item names_k" href="#">К-р "Мир"</a>
-				</div>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle lits_1" href="#" id="navbarDropdownHelp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Обращение</a>
-			<div class="dropdown-menu dropdown-menu-castom" aria-labelledby="dropdownMenuButton">
-			<!--Form validate-->
-				<form id="mailForm" class="container-fluid forms-window-tab forms-window-tab-iphone-5">
-				<style>
-					@media only screen and (max-width: 1366px){
-						.forms-window-tab{
-							min-width: 20rem ;
-						}
-					}
-					@media only screen and (max-width: 320px){
-						.forms-window-tab-iphone-5{
-							min-width: 10rem;
-						}
-					}
-				</style>
-					<div class="form-group col-12 col-md-6 col-lg-6">
-						<label for="electronObrash">Обратная связь</label>
-					</div>
-					<div class="form-group col-12 col-md-10 col-lg-12">
-						<input type="email" id="email" name="email" placeholder="Email" class="form-control">
-						<div class="alert-danger container-fluid rounded-lg" role="alert" id="ErrorMessEmail"></div><!--electronObrash -->
-					</div>
-					<div class="form-group col-12 col-md-10 col-lg-12">
-						<input type="text" id="name" name="name" placeholder="Введите имя" class="form-control">
-						<div class="alert-danger container-fluid rounded-lg" role="alert" id="ErrorMessName"></div>
-					</div>
-					<div class="form-group col-12 col-md-10 col-lg-12">
-						<input type="phone" id="phone" name="phone" placeholder="Телефон" class="form-control">
-						<div class="alert-danger container-fluid rounded-lg" role="alert" id="ErrorMessPhone"></div>
-					</div>
-					<div class="form-group col-12 col-md-10 col-lg-12">
-						<textarea name="message" id="message" placeholder="Введите сообщение" class="form-control"></textarea>
-						<div class="alert-danger container-fluid rounded-lg" role="alert" id="ErrorMessTextArea"></div>
-					</div>
-<!--
-					<div class="form-group col-auto col-md-7">
-						<label for="electronObrash">Прикрепить файл:</label>
-						<input type="file" id="electronObrash">
-					</div>
--->
-					<div class="form-group col-auto col-md-7">
-						<button type="button" id="sendMail" class="btn btn-primary btn-sm">Отправить</button>
-					</div>
-				</form>
-				<!--End form validate-->
-			</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link lits_1" href="#">О нас</a>
-			</li>
-		</ul>
-		<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2 col-lg-8" type="search" placeholder="Поиск" aria-label="Поиск">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Искать</button>
-		</form>
-	  </div>
-	</nav>
+	<!--nav panel-->
+			<?php require "../blocks/header.php" ?>
+	<!--end nav penel-->	
 </header>
-<!--end nav penel-->
+
 
 <!--carusel-->
 <main role="main" class="mt-5"><!--mt-5-->
@@ -556,128 +479,73 @@
 </main>
 
 <!--Start footer-->
-<footer class="footer container-fluid py-2 mt-3">
-	<div class="row">
-		<div class="col-12 col-md">
-			<small class="d-block mb-3 text-muted ml-1">© 2018-2019 «Kinotavr.by»</small>
-		</div>
-		<div class="col-6 col-md">
-			<ul class="list-unstyled small">
-				<h4 class="kin-footer">Калинина</h4>
-				<li class="mt-1">
-					<a class="text-muted">КУП "Кинотавр"</a>
-				</li>
-				<li class="mt-1">
-					<a href="https://www.google.ru/maps/place/52%C2%B025'35.1%22N+31%C2%B000'44.0%22E/@52.426469,31.0116938,243m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.426422!4d31.012226?hl=ru" class="text-muted">Беларусь, г. Гомель, ул. Коммунаров, 4</a>
-				</li>
-				<li class="mt-1">
-					<a class="text-muted">Тел./Факс: +375(232)27-90-09</a>
-				</li>
-				<li class="mt-1">
-					<a class="text-muted">E-mail: info@kinotavr.by</a>
-				</li>
-			</ul>
-		</div>
-		<div class="col-6 col-md">
-			<ul class="list-unstyled small">
-				<h4 class="kin-footer">Октябрь</h4>
-				<li class="mt-1">
-					<a class="text-muted">ПН–ВС с 11:00 до 21:30</a>
-				</li>
-				<li class="mt-1">
-					<a href="https://www.google.ru/maps/place/%D0%9A%D0%B8%D0%BD%D0%BE%D1%82%D0%B5%D0%B0%D1%82%D1%80+%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C+3D/@52.418826,30.9754684,485m/data=!3m1!1e3!4m13!1m7!3m6!1s0x0:0x0!2zNTLCsDI1JzA5LjMiTiAzMMKwNTgnMzUuNCJF!3b1!8m2!3d52.419258!4d30.976489!3m4!1s0x46d469c83fde6f31:0xc0fa4e86cf2af859!8m2!3d52.4192522!4d30.9766951?hl=ru" class="text-muted">Беларусь, г. Гомель, ул. Барыкина, 127</a>
-				</li>
-				<li class="mt-1">
-					<a class="text-muted">Тел: +375(232)27-90-09</a>
-				</li>
-			</ul>
-		</div>
-		<div class="col-6 col-md">
-			<ul class="list-unstyled small">
-				<h4 class="kin-footer">Мир</h4>
-				<li class="mt-1">
-					<a class="text-muted">ПН–ВС с 10:00 до 22:00</a>
-				</li>
-				<li class="mt-1">
-					<a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%98%D0%BB%D1%8C%D0%B8%D1%87%D0%B0+51%D0%B1,+%D0%93%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C/@52.3925377,31.0277046,243m/data=!3m1!1e3!4m5!3m4!1s0x46d468056e201163:0x3a6dac607289a054!8m2!3d52.3927816!4d31.0289471?hl=ru" class="text-muted">Беларусь, г. Гомель,ул. Ильича 51 б</a>
-				</li>
-				<li class="mt-1">
-					<a class="text-muted">+375 (232) 316298</a>
-				</li>
-			</ul>
-		</div>
-		<div class="col-6 col-md">
-			<a href="https://vk.com/kinotavr_gomel" class="link-click-social"><i class="icon-vk"></i></a>
-			<a href="https://www.facebook.com/kinotavr/" class="link-click-social"><i class="icon-facebook2"></i></a>
-			<a href="https://twitter.com/kinotavr_gomel" class="link-click-social"><i class="icon-twitter"></i></a>
-		</div>  
-	</div>
-</footer>
+	<?php require "../blocks/footer.php" ?>
 <!--End footer-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-		<script src="library/js/bootstrap.bundle.min.js"></script>
-		<script src="../treatment.js"></script>
-			
-		<script>
-			//плавный выпад dropdown
-			$( '.dropdown' ).on( 'show.bs.dropdown', function ( e ) {
-				$( this ).find( '.dropdown-menu' ).first().stop( true, true ).slideDown();
-			} );
-			$( '.dropdown' ).on( 'hide.bs.dropdown', function ( e ) {
-				$( this ).find( '.dropdown-menu' ).first().stop( true, true ).slideUp();
-			} );
-		</script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="library/js/bootstrap.bundle.min.js"></script>
+	<script src="../ajax/treatment.js"></script>
 
-        <script>
-			//параметры запуска сдайдера
-			$("#carouselExampleIndicators").carousel({
-         		interval : false;
-			});
-		</script>
-		
-		<script>
-			//активация попера
-			$(function () {
-  				$('[data-toggle="popover"]').popover()
-			});
-			//отмена по клику
-			$('.popover-dismiss').popover({
-  			trigger: 'focus'
-			});
-		</script>
-		
-		<script>
-			//чекбокс формы показа
-			$('.your-checkbox').prop('indeterminate', true);
-		</script>
-		
-		<script>
-			//фиксация выбора кинотеатра
-			$(".names_k").click(function(){
-				$(".name_kino").html($(this).html());
-			});
-		</script>
-		
-		<script>
-		// Example starter JavaScript for disabling form submissions if there are invalid fields
-		(function() {
-		  'use strict';
-		  window.addEventListener('load', function() {
-			// Fetch all the forms we want to apply custom Bootstrap validation styles to
-			var forms = document.getElementsByClassName('needs-validation');
-			// Loop over them and prevent submission
-			var validation = Array.prototype.filter.call(forms, function(form) {
-			  form.addEventListener('submit', function(event) {
-				if (form.checkValidity() === false) {
-				  event.preventDefault();
-				  event.stopPropagation();
-				}
-				form.classList.add('was-validated');
-			  }, false);
-			});
+	<script>
+		//плавный выпад dropdown
+		$( '.dropdown' ).on( 'show.bs.dropdown', function ( e ) {
+			$( this ).find( '.dropdown-menu' ).first().stop( true, true ).slideDown();
+		} );
+		$( '.dropdown' ).on( 'hide.bs.dropdown', function ( e ) {
+			$( this ).find( '.dropdown-menu' ).first().stop( true, true ).slideUp();
+		} );
+	</script>
+
+	<script>
+		//параметры запуска сдайдера
+		$("#carouselExampleIndicators").carousel({
+			interval : false;
+		});
+	</script>
+
+	<script>
+		//активация попера
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		});
+		//отмена по клику
+		$('.popover-dismiss').popover({
+		trigger: 'focus'
+		});
+	</script>
+
+	<script>
+		//чекбокс формы показа
+		$('.your-checkbox').prop('indeterminate', true);
+	</script>
+
+	<script>
+		//фиксация выбора кинотеатра
+		$(".names_k").click(function(){
+			$(".name_kino").html($(this).html());
+		});
+	</script>
+
+	<script>
+	// Example starter JavaScript for disabling form submissions if there are invalid fields
+	(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+		// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		var forms = document.getElementsByClassName('needs-validation');
+		// Loop over them and prevent submission
+		var validation = Array.prototype.filter.call(forms, function(form) {
+		  form.addEventListener('submit', function(event) {
+			if (form.checkValidity() === false) {
+			  event.preventDefault();
+			  event.stopPropagation();
+			}
+			form.classList.add('was-validated');
 		  }, false);
-		})();
-		</script>
+		});
+	  }, false);
+	})();
+	</script>
 		
 		<!--//плавное выпадение страницы
 			//$(document).ready(function()			
