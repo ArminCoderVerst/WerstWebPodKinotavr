@@ -1,6 +1,6 @@
 <?php
 if ( $_SERVER[ 'REQUEST_METHOD' ] == "POST" ) {
-	$connection = mysqli_connect( "localhost", "root", "123", 'users_admi_kn' )or die( "error" );
+	$connection = mysqli_connect( "localhost", "root", "123", 'users_admi_kn' ) or die( "error" );
 
 	$login = trim( $_POST[ 'login' ] );
 	$pass = trim( $_POST[ 'pass' ] );

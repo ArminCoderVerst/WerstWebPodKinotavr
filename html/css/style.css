@@ -9,10 +9,10 @@
 	font-family: "Abell Black";
 	src: url('../fonts/Abell Black.otf');
 }
-@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
-@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
-@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
-@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+	@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+	@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+	@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+	@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
 body
 {
 	-webkit-animation: fade-in 1s linear; /* Safari 4+ */
@@ -28,13 +28,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section
 {
     display: block;
 }
-/*Увеличение превью фото*/
-/*.carousel-item
-{	
-
-	filter: blur(100);
-    transform: translate3d(630px,0,0);
-}*/
 /*header*/
 .fixed-top
 {
@@ -89,6 +82,17 @@ button:focus
 {
 	color: white;
 	opacity: 0.9;
+}
+/*изменение размера окна обращение на ПК и Iphone*/
+@media only screen and (max-width: 1366px){
+	.forms-window-tab{
+		min-width: 20rem ;
+	}
+}
+@media only screen and (max-width: 320px){
+	.forms-window-tab-iphone-5{
+		min-width: 10rem;
+	}
 }
 .dropdown-menu
 {
@@ -231,7 +235,6 @@ button:focus
 	width: 100%;
 	display: block;
 	border-radius: 5px;
-/*	background-color: black;*/
 	background: #000000;
 	background: -webkit-linear-gradient(center, #000000, #150101);
 	background: -moz-linear-gradient(to center, #000000, #150101);
@@ -338,6 +341,7 @@ button:focus
 {
 	width: 5% !important;
 }
+/*адаптивный слайдер*/
 .img-prev-news-one
 {
 	background-image: url(../img/fisistr.jpg);
