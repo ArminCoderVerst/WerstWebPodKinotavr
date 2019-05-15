@@ -75,7 +75,7 @@
 		</a>
 	</div>
 </main>
-	<!--End carusel-->
+<!--End carusel-->
  
 <!--Aphisha kino-->
 
@@ -475,8 +475,6 @@
 	</div>
 </div> 
 <!--End card kino-->  
-
-</main>
 
 <!--Start footer-->
 	<?php require "../blocks/footer.php" ?>

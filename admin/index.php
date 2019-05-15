@@ -39,17 +39,77 @@
 		{
 ?>
 <!--start container-->
-<main role="main" class="container-fluid">
-	<header>
-		<nav class="navbar navbar-dark bg-dark fixed-top">
-			<a href="#" class="navbar-brand panel-wid"><span class="panel">K</span>inotavr.by</a>
-		</nav>
-	</header>
+<header>
+	<nav class="navbar navbar-dark bg-dark fixed-top">
+		<a href="#" class="navbar-brand panel-wid"><span class="panel">K</span>inotavr.by</a>
+	</nav>
+</header>
+<main role="main">
 	<!--start content-->
-	<div class="text-center">
-		<button type="button" class="btn btn-primary btn-sm" id="exit">Выйти</button>
+	<div class="container-fluid mt-5">
+		<div class="row">
+			<div class="col-auto col-sm-auto col-md-4 col-lg-3 mt-2">
+				<div class="card text-white bg-primary">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+					<h5 class="card-title">Primary card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-auto col-sm-auto col-md-4 col-lg-3 mt-2">
+				<div class="card text-white bg-primary">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+					<h5 class="card-title">Primary card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-auto col-sm-auto col-md-4 col-lg-3 mt-2">
+				<div class="card text-white bg-primary">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+					<h5 class="card-title">Primary card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-auto col-sm-auto col-md-4 col-lg-3 mt-2">
+				<div class="card text-white bg-primary">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+					<h5 class="card-title">Primary card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-auto col-sm-auto col-md-4 col-lg-3 mt-2">
+				<div class="card text-white bg-primary">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+					<h5 class="card-title">Primary card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-auto col-sm-auto col-md-4 col-lg-3 mt-2">
+				<div class="card text-white bg-primary">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+					<h5 class="card-title">Primary card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+		</div>	
 	</div>
 </main>
+<footer class="footer container-fluid mb-1">
+	<div class="text-center">
+		<button type="button" class="btn btn-secondary btn-sm btn-block" id="exit">Выйти</button>
+	</div>
+</footer>	
 <!--end container-->
 		<?php } else { ?>
 			Ага, конечно, ты меня взломал!
