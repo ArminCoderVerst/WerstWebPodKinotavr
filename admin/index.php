@@ -67,8 +67,8 @@
 	<!--start content-->
 	<div class="container-fluid" style="margin-top: 53px;">
 		<div class="row">
-			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2 hover-block" data-toggle="modal" data-target="#exampleModal">
-				<div class="card text-white bg-secondary">
+			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
+				<div class="card text-white bg-secondary hover-block-carousel" data-toggle="modal" data-target="#exampleModalcarousel">
 				  <div class="card-header">Добавить фото в слайдер</div>
 				  <div class="card-body">
 					<h5 class="card-title">Сейчас в кино</h5>
@@ -76,8 +76,8 @@
 				  </div>
 				</div>
 			</div>
-			<!--modal-->
-				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<!--modal carousel-->
+				<div class="modal fade" id="exampleModalcarousel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog" role="document">
 					<div class="modal-content">
 					  <div class="modal-header">
@@ -88,13 +88,25 @@
 					  </div>
 					  <div class="modal-body">
 						<form id="form" action="" method="post" enctype="multipart/form-data">   
-							<div>
-								<input type="file" id="img" multiple accept="image/*" name="img"/>
+							<div class="form-group">
+								<input class="form-control-file" type="file" id="img" multiple accept="image/*" name="img"/>
 							</div>
-							<div>
+							<div class="form-group">
 								<img class="mt-1" id="img-preview"/>
 								<br />
 								<a href="#" id="reset-img-preview" class="link-delete">удалить изображения</a>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputZagolovok">Заголовок фильма</label>
+								<input type="text" class="form-control" id="exampleInputZagolovok" placeholder="Введите заголовок фильма">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputText">Альтернативный текст</label>
+								<input type="text" class="form-control" id="exampleInputText" placeholder="Введите альтернативный текст">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputLink">Ссылка на билет</label>
+								<input type="text" class="form-control" id="exampleInputLink" placeholder="Введите ссылку на билет">
 							</div>
 						</form>
 					  </div>
@@ -105,16 +117,37 @@
 					</div>
 				  </div>
 				</div>
-			<!--end modal-->
+			<!--end modal carousel-->
 			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
-				<div class="card text-white bg-primary">
-				  <div class="card-header">Header</div>
+				<div class="card text-white bg-secondary hover-block-editing" data-toggle="modal" data-target="#exampleModaleditingNew">
+				  <div class="card-header">Редактирование новости</div>
 				  <div class="card-body">
-					<h5 class="card-title">Primary card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h5 class="card-title">Изменение в репертуаре</h5>
+					<p class="card-text">Сюда вносятся изменение в репертуаре фильмов, и возможно удаление самой записи.</p>
 				  </div>
 				</div>
 			</div>
+			<!--modal editing-->	
+				<div class="modal fade" id="exampleModaleditingNew" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Редактирование новостей</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+							Редактирование новости!!!
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+						<button type="button" class="btn btn-primary">Добавить</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			<!--emd modal editing-->
 			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
 				<div class="card text-white bg-primary">
 				  <div class="card-header">Header</div>

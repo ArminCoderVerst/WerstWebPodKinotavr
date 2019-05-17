@@ -90,15 +90,27 @@ body
 	left: 0;
 	bottom: 0;
 }
-.hover-block:hover
+/*block carousel*/
+.hover-block-carousel:hover
 {
 	transition: 0.5s;
 	opacity: 0.7;
 }
-.hover-block:not(:hover)
+.hover-block-carousel:not(:hover)
 {
 	transition: 0.5s;
 }
+/*block editing*/
+.hover-block-editing:hover
+{
+	transition: 0.5s;
+	opacity: 0.7;
+}
+.hover-block-editing:not(:hover)
+{
+	transition: 0.5s;
+}
+/*link delete*/
 .link-delete:hover{
 	transition: 0.5s;
 	color: black;
