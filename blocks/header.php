@@ -1,4 +1,4 @@
-	<nav class="navbar navbar-expand-lg navbar-default navbar-light fixed-top"><!--bg-light-->
+<nav class="navbar navbar-expand-lg navbar-default navbar-light fixed-top"><!--bg-light-->
 	<a class="navbar-brand" href="#">
 		<a class="col-auto col-sm-2 col-md-2 col-lg-auto face-logo"><span class="logo">K</span>inotavr.by</a>
 	</a>

@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <style>
-			@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900);
-			
-			body{font-family: Rubik,sans-serif;margin: 0;padding: 0;background-color: #27272a;}
-			#wrapper{height: 100vh;width: 100vw;}
-			.error-box{width:100%;left:0;right:0;}
-			.error-body h1{font-size: 210px;font-weight: 900;}
-			.text-danger{color: #f33155;}
-			.text-muted{color: #8d9ea7;}
-			.footer{display: block;width: 100%;}
-			.home{border-radius: 20px;opacity: 0.9;}
-			@media only screen and (max-width: 520px){.error-body h1{padding-top: 25%;font-size: 110px;font-weight: 700;line-height: 110px;}}
+		@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900);
+		
+		body{font-family: Rubik,sans-serif;margin: 0;padding: 0;background-color: #27272a;}
+		#wrapper{height: 100vh;width: 100vw;}
+		.error-box{width:100%;left:0;right:0;}
+		.error-body h1{font-size: 210px;font-weight: 900;}
+		.text-danger{color: #f33155;}
+		.text-muted{color: #8d9ea7;}
+		.footer{display: block;width: 100%;}
+		.home{border-radius: 20px;opacity: 0.9;}
+		@media only screen and (max-width: 520px){.error-body h1{padding-top: 25%;font-size: 110px;font-weight: 700;line-height: 110px;}}
 	</style>
 </head>
 <body>
