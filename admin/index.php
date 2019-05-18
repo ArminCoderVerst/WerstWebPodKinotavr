@@ -149,14 +149,100 @@
 				</div>
 			<!--emd modal editing-->
 			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
-				<div class="card text-white bg-primary">
-				  <div class="card-header">Header</div>
+				<div class="card text-white bg-secondary hover-block-add-news" data-toggle="modal" data-target="#exampleModaladdNews">
+				  <div class="card-header">Добавить новый фильм</div>
 				  <div class="card-body">
-					<h5 class="card-title">Primary card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h5 class="card-title">Новинки из фильмов</h5>
+					<p class="card-text">Сюда вносятся новые фильмы, либо какие-нибудь мероприятия которые проходят в кинотеатре.</p>
 				  </div>
 				</div>
 			</div>
+			<!--modal add news-->
+				<div class="modal fade" id="exampleModaladdNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Добавление фильма</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+							<div class="form-group">
+								<label for="exampleInputStat">Заголовок статьи</label>
+								<input type="text" class="form-control" id="exampleInputStat" placeholder="Введите название статьи">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputData">Введите дату</label>
+								<input type="text" class="form-control" id="exampleInputData" placeholder="Введите дату выхода">
+							</div>
+							<div class="form-group">
+								<div class="dropdown" id="myDropdown">
+								  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Категория</button>
+								  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<div class="custom-control custom-checkbox ml-1">
+										<input type="checkbox" class="custom-control-input" id="customControlKalinina">
+										<label class="custom-control-label" for="customControlKalinina">К-р "Калинина"</label>
+									</div>
+									<div class="custom-control custom-checkbox ml-1">
+										<input type="checkbox" class="custom-control-input" id="customControlOctober">
+										<label class="custom-control-label" for="customControlOctober">К-р "Октябрь"</label>
+									</div>
+									<div class="custom-control custom-checkbox ml-1">
+										<input type="checkbox" class="custom-control-input" id="customControlMir">
+										<label class="custom-control-label" for="customControlMir">К-р "Мир"</label>
+									</div>
+									<div class="custom-control custom-checkbox ml-1">
+										<input type="checkbox" class="custom-control-input" id="customControlNews">
+										<label class="custom-control-label" for="customControlNews">Новости</label>
+									</div>	
+									<div class="custom-control custom-checkbox ml-1">
+										<input type="checkbox" class="custom-control-input" id="customControlNowNews">
+										<label class="custom-control-label" for="customControlNowNews">Сейчас в кино</label>
+									</div>
+									<div class="custom-control custom-checkbox ml-1">
+										<input type="checkbox" class="custom-control-input" id="customControlSoon">
+										<label class="custom-control-label" for="customControlSoon">Скоро</label>
+									</div>
+								  </div>
+								</div>
+							</div>
+							<div class="form-group text-center">
+								<label for="exampleInputInfotmFilms">Информация о фильме</label>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputInformFilms">Возрастное ораничение</label>
+								<input type="text" class="form-control" id="exampleInputInformFilms" placeholder="Введите возрастное ограничение">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputJanr">Жанр</label>
+								<input type="text" class="form-control" id="exampleInputJanr" placeholder="Введите жанр фильма">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputOriginalName">Оригинальное название</label>
+								<input type="text" class="form-control" id="exampleInputOriginalName" placeholder="Введите оригинальное название фильма">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputYear">Год</label>
+								<input type="text" class="form-control" id="exampleInputYear" placeholder="Введите год">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputCountry">Страна</label>
+								<input type="text" class="form-control" id="exampleInputCountry" placeholder="Введите страну">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputAboutFilms">Кратко о фильме</label>
+								<textarea class="form-control" id="exampleInputAboutFilms" rows="3"></textarea>
+							</div>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+						<button type="button" class="btn btn-primary">Добавить</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			<!--end modal add news-->
 			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
 				<div class="card text-white bg-primary">
 				  <div class="card-header">Header</div>
@@ -226,5 +312,10 @@
 			});
 
 	</script>
+	
+	<script>
+		
+	</script>
+	
 </body>
 </html>

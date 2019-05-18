@@ -1,4 +1,4 @@
-<footer class="footer container-fluid py-2 mt-3">
+﻿<footer class="footer container-fluid py-2 mt-3">
 	<div class="row">
 		<div class="col-12 col-md">
 			<small class="d-block mb-3 text-muted ml-1">© 2018-2019 «Kinotavr.by»</small>
