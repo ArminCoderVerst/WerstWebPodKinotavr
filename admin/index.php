@@ -158,8 +158,8 @@
 				</div>
 			</div>
 			<!--modal add news-->
-				<div class="modal fade" id="exampleModaladdNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				  <div class="modal-dialog" role="document">
+				<div class="modal fade" id="exampleModaladdNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><!--bd-example-modal-xl-->
+				  <div class="modal-dialog" role="document"><!--modal-xl modal-dialog-centered-->
 					<div class="modal-content">
 					  <div class="modal-header">
 						<h5 class="modal-title" id="exampleModalLabel">Добавление фильма</h5>
@@ -207,8 +207,70 @@
 								  </div>
 								</div>
 							</div>
+							
+							<!--add repert kalinina-->
+							<div class="form-group">
+								<label for="exampleInputKinoKalin" class="font-weight-bold">Кинотеатр: "Калинина"</label>
+							</div>
+							<div class="form-group">
+								<div class="col-auto col-sm-auto col-md-auto col-lg-auto">
+									<div class="row">
+										<label for="exampleInputDataReliz">Дата показа (1) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputMany">Цены на билеты:</label>
+								<textarea class="form-control" id="exampleInputMany" rows="3"></textarea>
+							</div>
+							<!--end repert kalinina-->
+							
+							<!--add repert October-->
+							<div class="form-group">
+								<label for="exampleInputKinoOctober" class="font-weight-bold">Кинотеатр: "Октябрь"</label>
+							</div>
+							<div class="form-group">
+								<div class="col-auto col-sm-auto col-md-auto col-lg-auto">
+									<div class="row">
+										<label for="exampleInputDataReliz">Дата показа (1) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputMany">Цены на билеты:</label>
+								<textarea class="form-control" id="exampleInputMany" rows="3"></textarea>
+							</div>
+							<!--end	add repert October-->
+							
+							<!--add repert Mir-->
+							<div class="form-group">
+								<label for="exampleInputKinoMir" class="font-weight-bold">Кинотеатр: "Мир"</label>
+							</div>
+							<div class="form-group">
+								<div class="col-auto col-sm-auto col-md-auto col-lg-auto">
+									<div class="row">
+										<label for="exampleInputDataReliz">Дата показа (1) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputMany">Цены на билеты:</label>
+								<textarea class="form-control" id="exampleInputMany" rows="3"></textarea>
+							</div>
+							<!--end add repert Mir-->
+							
+							<!--o films -->
 							<div class="form-group text-center">
-								<label for="exampleInputInfotmFilms">Информация о фильме</label>
+								<label for="exampleInputInfotmFilms" class="font-weight-bold">Информация о фильме</label>
 							</div>
 							<div class="form-group">
 								<label for="exampleInputInformFilms">Возрастное ораничение</label>
@@ -234,6 +296,7 @@
 								<label for="exampleInputAboutFilms">Кратко о фильме</label>
 								<textarea class="form-control" id="exampleInputAboutFilms" rows="3"></textarea>
 							</div>
+							<!--end o films -->
 					  </div>
 					  <div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -314,7 +377,13 @@
 	</script>
 	
 	<script>
-		
+		//плавный выпад dropdown
+		$('.dropdown').on('show.bs.dropdown', function (e){
+				$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+		});
+		$('.dropdown').on('hide.bs.dropdown', function (e){
+			$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+		});
 	</script>
 	
 </body>
