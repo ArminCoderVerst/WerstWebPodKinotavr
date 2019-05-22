@@ -1,7 +1,10 @@
 @charset "utf-8";
+
+/*import fonts Arvo*/
+@import url('https://fonts.googleapis.com/css?family=Arvo:700&display=swap');
+
 @font-face{
-	font-family: "Arvo";
-	src: url(../fonts/Arvo-Bold.ttf);
+	font-family: 'Arvo', serif;
 }
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;

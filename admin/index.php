@@ -9,13 +9,6 @@
 	<link href="library/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="library/css/main-style.css" rel="stylesheet" type="text/css">
 	
-	<style>
-		#img-preview{
-			width: 310px;
-			height: 120px;
-		}
-    </style>
-	
 </head>
 
 <body>
@@ -46,7 +39,7 @@
 		{
 ?>
 <!--start container-->
-<header>
+<header class="headers" id="headers">
 	<nav class="navbar navbar-dark bg-dark fixed-top">
 		<a href="#" class="navbar-brand panel-wid"><span class="panel">K</span>inotavr.by</a>
 		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +49,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 			  <li class="nav-item active">
-		      	  <button type="button" class="btn btn-secondary btn-sm btn-block mt-1" id="exit">Выйти</button>
+		      	  <button type="button" class="btn btn-danger btn-sm btn-block mt-1" id="exit">Выйти</button>
 			  </li>
 			</ul>
 		</div>
@@ -71,7 +64,7 @@
 				<div class="card text-white bg-secondary hover-block-carousel" data-toggle="modal" data-target="#exampleModalcarousel">
 				  <div class="card-header">Добавить фото в слайдер</div>
 				  <div class="card-body">
-					<h5 class="card-title">Сейчас в кино</h5>
+					<h5 class="card-title">Сейчас в кинотеатрах</h5>
 					<p class="card-text">Сдесь отображается новинки из фильмов, которые проходят в кинотеатрах Гомеля.</p>
 				  </div>
 				</div>
@@ -87,12 +80,12 @@
 						</button>
 					  </div>
 					  <div class="modal-body">
-						<form id="form" action="" method="post" enctype="multipart/form-data">   
+						<form id="form" action="#" method="post" enctype="multipart/form-data">   
 							<div class="form-group">
 								<input class="form-control-file" type="file" id="img" multiple accept="image/*" name="img"/>
 							</div>
 							<div class="form-group">
-								<img class="mt-1" id="img-preview"/>
+								<img class="mt-1 img-fluid" id="img-preview"/>
 								<br />
 								<a href="#" id="reset-img-preview" class="link-delete">удалить изображения</a>
 							</div>
@@ -310,25 +303,7 @@
 				<div class="card text-white bg-primary">
 				  <div class="card-header">Header</div>
 				  <div class="card-body">
-					<h5 class="card-title">Primary card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  </div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
-				<div class="card text-white bg-primary">
-				  <div class="card-header">Header</div>
-				  <div class="card-body">
-					<h5 class="card-title">Primary card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  </div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
-				<div class="card text-white bg-primary">
-				  <div class="card-header">Header</div>
-				  <div class="card-body">
-					<h5 class="card-title">Primary card title</h5>
+					<h5 class="card-title">В стадии разработки</h5>
 					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 				  </div>
 				</div>
@@ -374,6 +349,14 @@
 				$('#img-preview').attr('src', 'default-preview.jpg');
 			});
 
+	</script>
+	
+	<script>
+		//фиксация dropdown
+		$('.dropdown').click(function(){
+			$('.dropdown-menu').show();
+			$('.dropdown-menu').stop();
+		});
 	</script>
 	
 	<script>

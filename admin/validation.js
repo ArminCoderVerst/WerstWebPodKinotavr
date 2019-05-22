@@ -19,7 +19,7 @@
 					setCookie("token", "/admin/", e, 365);
 					location.reload();
 					
-//					console.log(e);
+				//console.log(e);
 				} else {
 					$("#error").css('display', 'block');
 				}
