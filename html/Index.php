@@ -22,27 +22,47 @@
 	<!--end nav penel-->	
 </header>
 
+<?php
+	$link = mysqli_connect("127.0.0.1", "root", "123", "users_admi_kn") or die("loh");
+	
+	$query = mysqli_query($link, "SELECT * FROM pictures");
+	
+	$res = [];
+	
+	while ($row = mysqli_fetch_array($query))
+	{
+		$res[] = $row;
+	}
 
+?>
 <!--carusel-->
 <main role="main" class="mt-5"><!--mt-5-->
 	<div id="carouselExampleIndicators" class="carousel slide mobil-finde" data-ride="carousel" data-interval="false" data-pause="true"><!--carousel-fade-->
 		<!--Indicators-->
 		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<?php for($k = 0; $k < count($res); $k++) { ?>
+			
+				<li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $k; ?>" class="<?php echo $k == 0 ? "active" : "" ?>"></li>
+<!--			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
+<!--			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+			<?php
+				} 
+			?>
 		</ol>
 		<div class="carousel-inner">	
-			<div class="carousel-item active">
-				<div class="img-prev-news-one"></div>
+			<?php for($k = 0; $k < count($res); $k++) { ?>
+			<div class="carousel-item <?php echo $k == 0 ? "active" : "" ?>">
+				<div class="img-prev-news" style="background-image: url('pictures/<?php echo $res[$k]['slide_id'];?>');"></div>
 					<div class="container-fluid">
 						<div class="carousel-caption text-left"><!--d-none d-md-block text-left-->
-							<h1>Кладбище домашник животных</h1>
-							<p>С 44 Октября в кинотеатрах им.Калинина и "Октябрь"</p>
-							<p><a class="btn btn-primary btn-sm" href="#" role="button">Купить билет</a></p>		
+							<h1><?php echo $res[$k]['zagolovok_id']; ?></h1>
+							<p><?php echo $res[$k]['text_id']; ?></p>
+							<p><a class="btn btn-primary btn-sm" href="<?php echo $res[$k]['link_films_id']; ?>" role="button">Купить билет</a></p>		
 						</div>
 					</div>
 			</div>
+			<?php } ?>
+<!--
 			<div class="carousel-item">
 				<div class="img-prev-news-two"></div>
 					<div class="container-fluid">
@@ -63,6 +83,7 @@
 						</div>
 					</div>		
 			</div>
+-->
 		</div>
 		<!--Сontrols-->
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -223,13 +244,13 @@
 					<div class="modal-content">
 					<div class="modal-body">
 						<div class="text-left">
-							<p><strong>18+</strong></p>
+							<p><strong>Возраст: </strong>18+</p>
 
-							<p><strong>Жанр:</strong>драма, биография, музыка</p>
+							<p><strong>Жанр: </strong>драма, биография, музыка</p>
 
-							<p><strong>Оригинальное название:</strong> Bohemian Rhapsody</p>
-							<p><strong>Год:</strong> 2018</p>
-							<p><strong>Страна:</strong> Великобритания, США
+							<p><strong>Оригинальное название: </strong> Bohemian Rhapsody</p>
+							<p><strong>Год: </strong> 2018</p>
+							<p><strong>Страна: </strong> Великобритания, США
 							Режиссер: Брайан Сингер</p>
 
 							<div class="container" style="border-radius: 5px; background-color: #9B9B9B;"><p>Чествование группы Queen, их музыки и их выдающегося вокалиста Фредди Меркьюри, который бросил вызов стереотипам и победил условности, чтобы стать одним из самых любимых артистов на планете. Фильм прослеживает головокружительный путь группы к успеху, благодаря их культовым песням и революционному звуку, практически распад коллектива, поскольку образ жизни Меркьюри выходит из-под контроля, и их триумфальное воссоединение накануне концерта Live Aid, ставшим одним из величайших выступлений в истории рок-музыки.</p></div>

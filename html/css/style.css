@@ -342,9 +342,9 @@ button:focus
 	width: 5% !important;
 }
 /*адаптивный слайдер*/
-.img-prev-news-one
+.img-prev-news
 {
-	background-image: url(../img/fisistr.jpg);
+/*	background-image: url(../img/fisistr.jpg);*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

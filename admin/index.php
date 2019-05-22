@@ -80,7 +80,7 @@
 						</button>
 					  </div>
 					  <div class="modal-body">
-						<form id="form" action="#" method="post" enctype="multipart/form-data">   
+						<form id="form" action="#" method="post" enctype="multipart/form-data">  
 							<div class="form-group">
 								<input class="form-control-file" type="file" id="img" multiple accept="image/*" name="img"/>
 							</div>
@@ -100,6 +100,9 @@
 							<div class="form-group">
 								<label for="exampleInputLink">Ссылка на билет</label>
 								<input type="text" class="form-control" id="exampleInputLink" placeholder="Введите ссылку на билет">
+							</div>
+							<div class="form-group text-center">
+								<label for="exampleInputRedakt" class="font-weight-bold">Редактирование слайдера</label>
 							</div>
 						</form>
 					  </div>
@@ -161,9 +164,17 @@
 						</button>
 					  </div>
 					  <div class="modal-body">
+					  		<div class="form-group">
+					  			<label for="exampleInputVozLeng">Возраст/Язык</label>
+								<input type="text" class="form-control" id="exampleInputVozLeng" placeholder="Введите возрастное ограничение и язык">
+					  		</div>
 							<div class="form-group">
 								<label for="exampleInputStat">Заголовок статьи</label>
 								<input type="text" class="form-control" id="exampleInputStat" placeholder="Введите название статьи">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputJanr">Введите жанр</label>
+								<input type="text" class="form-control" id="exampleInputJanr" placeholder="Введите жанр фильма">
 							</div>
 							<div class="form-group">
 								<label for="exampleInputData">Введите дату</label>
