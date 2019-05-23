@@ -83,6 +83,7 @@
 						<form id="form" action="#" method="post" enctype="multipart/form-data">  
 							<div class="form-group">
 								<input class="form-control-file" type="file" id="img" multiple accept="image/*" name="img"/>
+								<input type="hidden" id="fileName"/>
 							</div>
 							<div class="form-group">
 								<img class="mt-1 img-fluid" id="img-preview"/>
@@ -103,12 +104,23 @@
 							</div>
 							<div class="form-group text-center">
 								<label for="exampleInputRedakt" class="font-weight-bold">Редактирование слайдера</label>
+									<?php
+										$qr = mysqli_query($connection, "SELECT * FROM pictures");
+
+										if (mysqli_num_rows($qr) > 0) {
+											while ($row = mysqli_fetch_array($qr)) {
+									?>
+										<div id="pic<?php echo $row["id"];?>"><span><?php echo $row["zagolovok_id"]; ?></span> <span class="deletePic" id_pic="<?php echo $row["id"]; ?>">X</span></div>
+
+									<?php }
+										}
+									?>
 							</div>
 						</form>
 					  </div>
 					  <div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-						<button type="button" class="btn btn-primary">Добавить</button>
+						<button type="button" class="btn btn-primary" id="upload">Добавить</button>
 					  </div>
 					</div>
 				  </div>
@@ -332,6 +344,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="library/js/bootstrap.bundle.min.js"></script>
 	<script src="validation.js"></script>
+	<script src="deletePicture.js"></script>
+	<script src="addPicture.js"></script>
+	<script src="uploadPicture.js"></script>
 	
 	<script>
 		$('#img').change(function() {
@@ -339,10 +354,12 @@
 				if (input.files && input.files[0]) {
 					if (input.files[0].type.match('image.*')) {
 						var reader = new FileReader();
+						$("#fileName").val(input.files[0].name);
 						reader.onload = function(e) {
 							$('#img-preview').attr('src', e.target.result);
 						}
 						reader.readAsDataURL(input.files[0]);
+						fileUpload();
 					} else {
 						console.log('ошибка, не изображение');
 					}
