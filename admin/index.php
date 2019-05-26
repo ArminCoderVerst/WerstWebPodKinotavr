@@ -104,13 +104,22 @@
 							</div>
 							<div class="form-group text-center">
 								<label for="exampleInputRedakt" class="font-weight-bold">Редактирование слайдера</label>
+									<!--удаления фото с базы данных-->
 									<?php
 										$qr = mysqli_query($connection, "SELECT * FROM pictures");
 
 										if (mysqli_num_rows($qr) > 0) {
 											while ($row = mysqli_fetch_array($qr)) {
 									?>
-										<div id="pic<?php echo $row["id"];?>"><span><?php echo $row["zagolovok_id"]; ?></span> <span class="deletePic" id_pic="<?php echo $row["id"]; ?>">X</span></div>
+										<!--отображение редактирования фото в слайдере-->
+										<div class="text-left" id="pic<?php echo $row["id"];?>">
+											<!--отображения заголовка слайдера с бд-->
+											<span><?php echo $row["zagolovok_id"]; ?></span>
+												<!--значок на удаление из слайдера-->
+												<span style="cursor: pointer;" class="deletePic close" aria-label="Close" id_pic="<?php echo $row["id"]; ?>">
+													<span aria-hidden="true">&times;</span>
+												</span>
+										</div>
 
 									<?php }
 										}

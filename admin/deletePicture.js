@@ -9,7 +9,9 @@
             },
             (e)=>{
                 $(`#pic${iid}`).hide();
-                console.log(e);
+
+                alert("Удалено!");
+                //console.log(e);
             }
         )
     });

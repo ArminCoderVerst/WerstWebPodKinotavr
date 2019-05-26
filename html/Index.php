@@ -24,17 +24,16 @@
 </header>
 
 <?php
-	$link = mysqli_connect("127.0.0.1", "root", "123", "users_admi_kn") or die("loh");
-	
+	$link = mysqli_connect("127.0.0.1", "root", "123", "users_admi_kn") or die("Error sql_connect");
+
 	$query = mysqli_query($link, "SELECT * FROM pictures");
-	
+
 	$res = [];
-	
+
 	while ($row = mysqli_fetch_array($query))
 	{
 		$res[] = $row;
 	}
-
 ?>
 <!--carusel-->
 <main role="main" class="mt-5"><!--mt-5-->
@@ -44,24 +43,24 @@
 			<?php for($k = 0; $k < count($res); $k++) { ?>
 			
 				<li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $k; ?>" class="<?php echo $k == 0 ? "active" : "" ?>"></li>
-<!--			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
-<!--			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+				<!--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
+				<!--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
 			<?php
 				} 
 			?>
 		</ol>
 		<div class="carousel-inner">	
 			<?php for($k = 0; $k < count($res); $k++) { ?>
-			<div class="carousel-item <?php echo $k == 0 ? "active" : "" ?>">
-				<div class="img-prev-news" style="background-image: url('pictures/<?php echo $res[$k]['slide_id'];?>');"></div>
-					<div class="container-fluid">
-						<div class="carousel-caption text-left"><!--d-none d-md-block text-left-->
-							<h1><?php echo $res[$k]['zagolovok_id']; ?></h1>
-							<p><?php echo $res[$k]['text_id']; ?></p>
-							<p><a class="btn btn-primary btn-sm" href="<?php echo $res[$k]['link_films_id']; ?>" role="button">Купить билет</a></p>		
+				<div class="carousel-item <?php echo $k == 0 ? "active" : "" ?>">
+					<div class="img-prev-news" style="background-image: url('pictures/<?php echo $res[$k]['slide_id'];?>');"></div>
+						<div class="container-fluid">
+							<div class="carousel-caption text-left"><!--d-none d-md-block text-left-->
+								<h1><?php echo $res[$k]['zagolovok_id']; ?></h1>
+								<p><?php echo $res[$k]['text_id']; ?></p>
+								<p><a class="btn btn-primary btn-sm" href="<?php echo $res[$k]['link_films_id']; ?>" role="button">Купить билет</a></p>		
+							</div>
 						</div>
-					</div>
-			</div>
+				</div>
 			<?php } ?>
 <!--
 			<div class="carousel-item">
@@ -504,14 +503,9 @@
 	
 	<!--Jquery scripts-->
 	<script src="library/jquery-3.2.1.min.js"></script>
-<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>-->
 	
 	<!--Bootstrap popper.js scripts-->
 	<script src="library/js/bootstrap.bundle.min.js"></script>
-<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
-	
-	<!--Bootstrap.min.js scripts-->
-<!--	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
 	
 	<!--Validation send mail-->
 	<script src="../ajax/treatment.js"></script>

@@ -351,22 +351,4 @@ button:focus
 	height: 95vh;
 	width: 100vw;
 }
-.img-prev-news-two
-{
-	background-image: url(../img/orig.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 95vh;
-	width: 100vw;
-}
-.img-prev-news-three
-{
-	background-image: url(../img/helyin.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 95vh;
-	width: 100vw;
-}
 /* CSS Document */
