@@ -128,8 +128,8 @@
 						</form>
 					  </div>
 					  <div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-						<button type="button" class="btn btn-primary" id="upload">Добавить</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+							<button type="button" class="btn btn-primary" id="upload">Добавить</button>
 					  </div>
 					</div>
 				  </div>
@@ -137,10 +137,10 @@
 			<!--end modal carousel-->
 			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
 				<div class="card text-white bg-secondary hover-block-editing" data-toggle="modal" data-target="#exampleModaleditingNew">
-				  <div class="card-header">Редактирование новости</div>
+				  <div class="card-header">Удаление новостей/статей</div>
 				  <div class="card-body">
-					<h5 class="card-title">Изменение в репертуаре</h5>
-					<p class="card-text">Сюда вносятся изменение в репертуаре фильмов, и возможно удаление самой записи.</p>
+					<h5 class="card-title">Архив новостей/статей</h5>
+					<p class="card-text">Сдесь отображаються новости или какие либо спецпроекты, которые были добавлены на сайт.</p>
 				  </div>
 				</div>
 			</div>
@@ -149,13 +149,15 @@
 				  <div class="modal-dialog" role="document">
 					<div class="modal-content">
 					  <div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Редактирование новостей</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Удаление новостей/статей</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						  <span aria-hidden="true">&times;</span>
 						</button>
 					  </div>
 					  <div class="modal-body">
-							Редактирование новости!!!
+								<div class="form-group text-center">
+										...
+								</div>
 					  </div>
 					  <div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -185,6 +187,17 @@
 						</button>
 					  </div>
 					  <div class="modal-body">
+							<form id="form" action="#" method="post" enctype="multipart/form-data">
+									<div class="form-group">
+										<input class="form-control-file" type="file" id="img-news" multiple accept="image/*" name="img"/>
+										<!-- <input type="hidden" id="fileName"/> -->
+									</div>
+									<div class="form-group">
+										<img class="mt-1 img-fluid" id="img-preview-news"/>
+										<br />
+										<a href="#" id="reset-img-preview-news" class="link-delete">удалить изображения</a>
+									</div>
+							</form>
 					  		<div class="form-group">
 					  			<label for="exampleInputVozLeng">Возраст/Язык</label>
 								<input type="text" class="form-control" id="exampleInputVozLeng" placeholder="Введите возрастное ограничение и язык">
@@ -200,6 +213,17 @@
 							<div class="form-group">
 								<label for="exampleInputData">Введите дату</label>
 								<input type="text" class="form-control" id="exampleInputData" placeholder="Введите дату выхода">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputData">Форма показа</label>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="customControlInline2D">
+										<label class="custom-control-label" for="customControlInline2D">2D</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="customControlInline3D">
+										<label class="custom-control-label" for="customControlInline3D">3D</label>
+									</div>
 							</div>
 							<div class="form-group">
 								<div class="dropdown" id="myDropdown">
@@ -244,12 +268,68 @@
 										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
 										<label for="exampleInputSession">Сеанс-(ы):</label>
 										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (2) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (3) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (4) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (5) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (6) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (7) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (8) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (9) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (10) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
 									</div>
 								</div>
 							</div>
+							<div class="form-group text-center">
+								<label class="font-weight-bold" for="exampleInputMany">Цены на билеты:</label>
+							</div>
 							<div class="form-group">
-								<label for="exampleInputMany">Цены на билеты:</label>
-								<textarea class="form-control" id="exampleInputMany" rows="3"></textarea>
+								<label for="exampleInputSession">Дневные сеансы</label>
+								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputSession">Вечение сеансы</label>
+								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputSession">Выходные и праздничные дни</label>
+								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<!--end repert kalinina-->
 							
@@ -260,16 +340,72 @@
 							<div class="form-group">
 								<div class="col-auto col-sm-auto col-md-auto col-lg-auto">
 									<div class="row">
-										<label for="exampleInputDataReliz">Дата показа (1) :</label>
+									<label for="exampleInputDataReliz">Дата показа (1) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (2) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (3) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (4) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (5) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (6) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (7) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (8) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (9) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (10) :</label>
 										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
 										<label for="exampleInputSession">Сеанс-(ы):</label>
 										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
 									</div>
 								</div>
 							</div>
+							<div class="form-group text-center">
+								<label class="font-weight-bold" for="exampleInputMany">Цены на билеты:</label>
+							</div>
 							<div class="form-group">
-								<label for="exampleInputMany">Цены на билеты:</label>
-								<textarea class="form-control" id="exampleInputMany" rows="3"></textarea>
+								<label for="exampleInputSession">Дневные сеансы</label>
+								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputSession">Вечение сеансы</label>
+								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputSession">Выходные и праздничные дни</label>
+								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<!--end	add repert October-->
 							
@@ -280,16 +416,72 @@
 							<div class="form-group">
 								<div class="col-auto col-sm-auto col-md-auto col-lg-auto">
 									<div class="row">
-										<label for="exampleInputDataReliz">Дата показа (1) :</label>
+									<label for="exampleInputDataReliz">Дата показа (1) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (2) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (3) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (4) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (5) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (6) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (7) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (8) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (9) :</label>
+										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
+										<label for="exampleInputSession">Сеанс-(ы):</label>
+										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
+
+										<label for="exampleInputDataReliz">Дата показа (10) :</label>
 										<input type="text" class="form-control" id="exampleInputDataReliz" placeholder="Введите дату показа">
 										<label for="exampleInputSession">Сеанс-(ы):</label>
 										<input type="text" class="form-control" id="exampleInputSession" placeholder="Введите время сеанса">
 									</div>
 								</div>
 							</div>
+							<div class="form-group text-center">
+								<label class="font-weight-bold" for="exampleInputMany">Цены на билеты:</label>
+							</div>
 							<div class="form-group">
-								<label for="exampleInputMany">Цены на билеты:</label>
-								<textarea class="form-control" id="exampleInputMany" rows="3"></textarea>
+								<label for="exampleInputSession">Дневные сеансы</label>
+								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputSession">Вечение сеансы</label>
+								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputSession">Выходные и праздничные дни</label>
+								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<!--end add repert Mir-->
 							
@@ -322,10 +514,13 @@
 								<textarea class="form-control" id="exampleInputAboutFilms" rows="3"></textarea>
 							</div>
 							<!--end o films -->
-					  </div>
+						</div>
+						<div class="form-group text-center">
+								<label for="exampleInputRedNews" class="font-weight-bold">Редактирование новостей</label>
+						</div>
 					  <div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-						<button type="button" class="btn btn-primary">Добавить</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+								<button type="button" class="btn btn-primary">Добавить</button>
 					  </div>
 					</div>
 				  </div>
@@ -358,6 +553,7 @@
 	<script src="uploadPicture.js"></script>
 	
 	<script>
+		//предпросмотр фото в слайдере
 		$('#img').change(function() {
 				var input = $(this)[0];
 				if (input.files && input.files[0]) {
@@ -384,6 +580,36 @@
 			
 			$('#form').bind('reset', function() {
 				$('#img-preview').attr('src', 'default-preview.jpg');
+			});
+
+	</script>
+
+	<script>
+		//предпросмотр фото в новостях
+			$('#img-news').change(function() {
+				var input = $(this)[0];
+				if (input.files && input.files[0]) {
+					if (input.files[0].type.match('image.*')) {
+						var reader = new FileReader();
+						reader.onload = function(e) {
+							$('#img-preview-news').attr('src', e.target.result);
+						}
+						reader.readAsDataURL(input.files[0]);
+					} else {
+						console.log('ошибка, не изображение');
+					}
+				} else {
+					console.log('хьюстон у нас проблема');
+				}
+			});
+			
+			$('#reset-img-preview-news').click(function() {
+				$('#img').val('');
+				$('#img-preview-news').attr('src', 'default-preview.jpg');
+			});
+			
+			$('#form').bind('reset', function() {
+				$('#img-preview-news').attr('src', 'default-preview.jpg');
 			});
 
 	</script>
