@@ -176,21 +176,35 @@
 <!--End dropdown aphisha-->
 	
 <!--Start card kino-->
+<?php
+		$connect = mysqli_connect("localhost", "root", "123", "users_admi_kn") or die ("Error sql_connect");
+
+		$news = mysqli_query($connect, "SELECT * FROM film");
+
+		$resn = [];
+
+		while ($row = mysqli_fetch_array($news))
+		{
+			$resn[] = $row;
+		}
+?>
 <div class="container-fluid"><!--style="margin-top: 15px;"-->
 	<div class="row">
+		<?php for($f = 0; $f < count($resn); $f++) { ?>
 		<div class="col-12 col-sm-4 col-md-4 col-lg-3">
 			<div class="card" style="background-color: #27272a; border: none; border-radius: 25px; max-height: 610px;"><!--text-white bg-dark--><!--border: solid red 1px-->
-			<img class="card-img-top img-fluid mx-auto backlight" src="img/5f55fad20e3f7a06b88c03e35894e1c4.jpg" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
+			<img class="card-img-top img-fluid mx-auto backlight" src="img/<?php echo $resn[$f]['logo_films_id']?>" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
 			<div class="card-body">
 			 <div class="text-center">
-					<small class="voz-ograch">16+/RU</small>
+					<small class="voz-ograch"><?php echo $resn[$f]['vozrast_ tongue_id']; ?></small>
 			  </div>
-			  <h5 class="card-title name-film-oglav text-center">Богемская рапсодия</h5>
+			  <h5 class="card-title name-film-oglav text-center"><?php echo $resn[$f]['movie_title_id']; ?></h5>
 				<div class="text-center">
-					<small class="voz-ograch">Семейный</small>
+					<small class="voz-ograch"><?php echo $resn[$f]['genre_id']; ?></small>
 				</div>
 				<div class="text-center">
-					<button type="button" class="btn btn-outline-success btn-outline-default" style="border-radius: 15px;">C 04.09</button>
+					<button type="button" class="btn btn-outline-success btn-outline-default" style="border-radius: 15px;"><?php echo $resn[$f]['release_date_id']; ?></button>
+					<button type="button" class="btn btn-outline-secondary btn-outline-pokaz" style="border-radius: 15px;"><?php echo $resn[$f]['display_form_id']; ?></button>
 				</div>
 				<div class="text-center mt-2">
 
@@ -208,25 +222,94 @@
 						</button>
 					  </div>
 					  <div class="modal-body">
-						<div class="text-left">Кинотеатр имени "Калинена"</div>
+							
+						<div class="text-left font-weight-bold">Кинотеатр "Калинина"</div>
 							<div class="text-left">
 								<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
 								<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 14 по 21 ноября</button>
 								<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 21 по 8 декабря</button>
 							</div>
-						<div class="text-left">
-							Цена за билет:
-							<u>- на дневные сеансы (до 17:00) в будние дни:</u>
-							<p>1—14 ряд: 5 руб. 50 коп.</p>
+								<div class="text-left">
+									<p>Цена за билет:</p>
+									<u>- на дневные сеансы (до 17:00) в будние дни:</u>
+									<p>1—14 ряд: 5 руб. 50 коп.</p>
 
-							<u>- на вечерние сеансы (с 17:00) в будние дни, сеансы в выходные и праздничные дни:</u>
-							<p>1—14 ряд: 6 руб. 50 коп.</p>
+									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
 
-							<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
 
-							<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
-						</div>
+									<u>- на вечерние сеансы (с 17:00) в будние дни: сеансы в выходные и праздничные дни:</u>
+									<p>1—14 ряд: 6 руб. 50 коп.</p>
 
+									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<u>- на ночные сеансы:</u>
+									<p>1—14 ряд: 6 руб. 50 коп.</p>
+
+									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+							</div>
+
+							<div class="text-left font-weight-bold">Кинотеатр "Октябрь"</div>
+								<div class="text-left">
+									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
+									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
+							</div>
+							<div class="text-left">
+									<p>Цена за билет:</p>
+									<u>- на дневные сеансы (до 17:00) в будние дни:</u>
+									<p>1—14 ряд: 5 руб. 50 коп.</p>
+
+									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<u>- на вечерние сеансы (с 17:00) в будние дни: сеансы в выходные и праздничные дни:</u>
+									<p>1—14 ряд: 6 руб. 50 коп.</p>
+
+									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<u>- на ночные сеансы:</u>
+									<p>1—14 ряд: 6 руб. 50 коп.</p>
+
+									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+							</div>
+
+							<div class="text-left font-weight-bold">Кинотеатр "Мир"</div>
+								<div class="text-left">
+									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
+									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
+							</div>
+							<div class="text-left">
+									<p>Цена за билет:</p>
+									<u>- на дневные сеансы (до 17:00) в будние дни:</u>
+									<p>1—14 ряд: 5 руб. 50 коп.</p>
+
+									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<u>- на вечерние сеансы (с 17:00) в будние дни: сеансы в выходные и праздничные дни:</u>
+									<p>1—14 ряд: 6 руб. 50 коп.</p>
+
+									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<u>- на ночные сеансы:</u>
+									<p>1—14 ряд: 6 руб. 50 коп.</p>
+
+									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+
+									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+							</div>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
@@ -239,6 +322,9 @@
 				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#exampleModalLong_film_1" id="films" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
 
 				<!--Modal-->
+				<?php
+					 
+				?>
 				<div class="modal fade bd-example-modal-lg" id="exampleModalLong_film_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-lg modal-dialog-centered">
 					<div class="modal-content">
@@ -266,6 +352,8 @@
 			</div>
 		  </div> 		
 		 </div>
+		<?php } ?>
+
 		<div class="col-12 col-sm-4 col-md-4 col-lg-3">
  	<div class="card" style="background-color: #27272a; border: none; border-radius: 25px; max-height: 610px;">
     <img class="card-img-top img-fluid mx-auto backlight" src="img/9749c521b21d[th9bd6a77.jpg" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
@@ -278,7 +366,8 @@
     		<small class="voz-ograch">Триллер</small>
      	</div>
       	<div class="text-center">
-      		<button type="button" class="btn btn-outline-success mt-2" style="border-radius: 15px;">C 15.09</button>
+					<button type="button" class="btn btn-outline-success mt-2" style="border-radius: 15px;">C 15.09</button>
+					<button type="button" class="btn btn-outline-secondary mt-2" style="border-radius: 15px;">2D</button>
 	  	</div>
 	  	<div class="text-center mt-2">
 	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.9;">Расписание</button>

@@ -331,6 +331,13 @@ button:focus
 	color: #23A341 !important;
 	cursor: default !important;
 }
+.btn-outline-pokaz, .btn-outline-pokaz:active, .btn-outline-pokaz:focus, .btn-outline-pokaz:hover
+{
+	background-color: transparent !important;
+	box-shadow: none !important;
+	color: #9fa6ab !important;
+	cursor: default !important;
+}
 /*Сдвиг навазния в слайдере */
 .carousel-caption
 {

@@ -155,9 +155,9 @@
 						</button>
 					  </div>
 					  <div class="modal-body">
-								<div class="form-group text-center">
-										...
-								</div>
+						<div class="form-group text-center">
+							...
+						</div>
 					  </div>
 					  <div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -167,6 +167,7 @@
 				  </div>
 				</div>
 			<!--emd modal editing-->
+
 			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
 				<div class="card text-white bg-secondary hover-block-add-news" data-toggle="modal" data-target="#exampleModaladdNews">
 				  <div class="card-header">Добавить новый фильм</div>
@@ -188,15 +189,15 @@
 					  </div>
 					  <div class="modal-body">
 							<form id="form" action="#" method="post" enctype="multipart/form-data">
-									<div class="form-group">
-										<input class="form-control-file" type="file" id="img-news" multiple accept="image/*" name="img"/>
-										<!-- <input type="hidden" id="fileName"/> -->
-									</div>
-									<div class="form-group">
-										<img class="mt-1 img-fluid" id="img-preview-news"/>
-										<br />
-										<a href="#" id="reset-img-preview-news" class="link-delete">удалить изображения</a>
-									</div>
+								<div class="form-group">
+									<input class="form-control-file" type="file" id="img-news" multiple accept="image/*" name="img"/>
+									<!-- <input type="hidden" id="fileName"/> -->
+								</div>
+								<div class="form-group">
+									<img class="mt-1 img-fluid" id="img-preview-news"/>
+									<br />
+									<a href="#" id="reset-img-preview-news" class="link-delete">удалить изображения</a>
+								</div>
 							</form>
 					  		<div class="form-group">
 					  			<label for="exampleInputVozLeng">Возраст/Язык</label>
@@ -215,15 +216,8 @@
 								<input type="text" class="form-control" id="exampleInputData" placeholder="Введите дату выхода">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputData">Форма показа</label>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customControlInline2D">
-										<label class="custom-control-label" for="customControlInline2D">2D</label>
-									</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customControlInline3D">
-										<label class="custom-control-label" for="customControlInline3D">3D</label>
-									</div>
+								<label for="exampleInputFormDisplay">Форма показа</label>
+								<input type="text" class="form-control" id="exampleInputFormDisplay" placeholder="Введите форму показа">
 							</div>
 							<div class="form-group">
 								<div class="dropdown" id="myDropdown">
@@ -324,11 +318,11 @@
 								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Вечение сеансы</label>
+								<label for="exampleInputSession">Вечерние сеансы, в будние дни и все сеансы в выходные дни</label>
 								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Выходные и праздничные дни</label>
+								<label for="exampleInputSession">Ночные сеансы</label>
 								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<!--end repert kalinina-->
@@ -400,11 +394,11 @@
 								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Вечение сеансы</label>
+								<label for="exampleInputSession">Вечерние сеансы, в будние дни и все сеансы в выходные дни</label>
 								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Выходные и праздничные дни</label>
+								<label for="exampleInputSession">Ночные сеансы</label>
 								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<!--end	add repert October-->
@@ -476,11 +470,11 @@
 								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Вечение сеансы</label>
+								<label for="exampleInputSession">Вечерние сеансы, в будние дни и все сеансы в выходные дни</label>
 								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Выходные и праздничные дни</label>
+								<label for="exampleInputSession">Ночные сеансы</label>
 								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
 							</div>
 							<!--end add repert Mir-->
@@ -519,8 +513,8 @@
 								<label for="exampleInputRedNews" class="font-weight-bold">Редактирование новостей</label>
 						</div>
 					  <div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-								<button type="button" class="btn btn-primary">Добавить</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+							<button type="button" class="btn btn-primary">Добавить</button>
 					  </div>
 					</div>
 				  </div>
