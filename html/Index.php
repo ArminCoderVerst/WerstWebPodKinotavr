@@ -181,30 +181,30 @@
 
 		$news = mysqli_query($connect, "SELECT * FROM film");
 
-		$resn = [];
+		$fims = [];
 
 		while ($row = mysqli_fetch_array($news))
 		{
-			$resn[] = $row;
+			$films[] = $row;
 		}
 ?>
 <div class="container-fluid"><!--style="margin-top: 15px;"-->
 	<div class="row">
-		<?php for($f = 0; $f < count($resn); $f++) { ?>
+		<?php for($f = 0; $f < count($films); $f++) { ?>
 		<div class="col-12 col-sm-4 col-md-4 col-lg-3">
 			<div class="card" style="background-color: #27272a; border: none; border-radius: 25px; max-height: 610px;"><!--text-white bg-dark--><!--border: solid red 1px-->
-			<img class="card-img-top img-fluid mx-auto backlight" src="img/<?php echo $resn[$f]['logo_films_id']?>" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
+			<img class="card-img-top img-fluid mx-auto backlight" src="img/<?php echo $films[$f]['logo_films_id']?>" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
 			<div class="card-body">
-			 <div class="text-center">
-					<small class="voz-ograch"><?php echo $resn[$f]['vozrast_ tongue_id']; ?></small>
+			 	<div class="text-center">
+					<small class="voz-ograch"><?php echo $films[$f]['vozrast_tongue_id']; ?></small>
 			  </div>
-			  <h5 class="card-title name-film-oglav text-center"><?php echo $resn[$f]['movie_title_id']; ?></h5>
+			  <h5 class="card-title name-film-oglav text-center"><?php echo $films[$f]['movie_title_id']; ?></h5>
 				<div class="text-center">
-					<small class="voz-ograch"><?php echo $resn[$f]['genre_id']; ?></small>
+					<small class="voz-ograch"><?php echo $films[$f]['genre_id']; ?></small>
 				</div>
 				<div class="text-center">
-					<button type="button" class="btn btn-outline-success btn-outline-default" style="border-radius: 15px;"><?php echo $resn[$f]['release_date_id']; ?></button>
-					<button type="button" class="btn btn-outline-secondary btn-outline-pokaz" style="border-radius: 15px;"><?php echo $resn[$f]['display_form_id']; ?></button>
+					<button type="button" class="btn btn-outline-success btn-outline-default" style="border-radius: 15px;"><?php echo $films[$f]['release_date_id']; ?></button>
+					<button type="button" class="btn btn-outline-secondary btn-outline-pokaz" style="border-radius: 15px;"><?php echo $films[$f]['display_form_id']; ?></button>
 				</div>
 				<div class="text-center mt-2">
 
@@ -319,12 +319,10 @@
 				</div>
 				<!--End modal window-->
 
+				<!--Start buttons modal-->
 				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#exampleModalLong_film_1" id="films" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
 
 				<!--Modal-->
-				<?php
-					 
-				?>
 				<div class="modal fade bd-example-modal-lg" id="exampleModalLong_film_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-lg modal-dialog-centered">
 					<div class="modal-content">
@@ -336,8 +334,7 @@
 
 							<p><strong>Оригинальное название: </strong> Bohemian Rhapsody</p>
 							<p><strong>Год: </strong> 2018</p>
-							<p><strong>Страна: </strong> Великобритания, США
-							Режиссер: Брайан Сингер</p>
+							<p><strong>Страна: </strong> Великобритания, США Режиссер: Брайан Сингер</p>
 
 							<div class="container" style="border-radius: 5px; background-color: #9B9B9B;"><p>Чествование группы Queen, их музыки и их выдающегося вокалиста Фредди Меркьюри, который бросил вызов стереотипам и победил условности, чтобы стать одним из самых любимых артистов на планете. Фильм прослеживает головокружительный путь группы к успеху, благодаря их культовым песням и революционному звуку, практически распад коллектива, поскольку образ жизни Меркьюри выходит из-под контроля, и их триумфальное воссоединение накануне концерта Live Aid, ставшим одним из величайших выступлений в истории рок-музыки.</p></div>
 						</div>
@@ -348,231 +345,14 @@
 					</div>
 				  </div>
 				</div>
+				<!--End modal window-->
 			  </div>
 			</div>
 		  </div> 		
 		 </div>
+		 <!--end cols films-->
 		<?php } ?>
-
-		<div class="col-12 col-sm-4 col-md-4 col-lg-3">
- 	<div class="card" style="background-color: #27272a; border: none; border-radius: 25px; max-height: 610px;">
-    <img class="card-img-top img-fluid mx-auto backlight" src="img/9749c521b21d[th9bd6a77.jpg" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
-    <div class="card-body">
-     	<div class="text-center">
-     		<small class="voz-ograch">18+/RU</small>
-     	</div>
-      	<h5 class="card-title name-film-oglav text-center">Bohemian Rhapsody</h5>
-        <div class="text-center">
-    		<small class="voz-ograch">Триллер</small>
-     	</div>
-      	<div class="text-center">
-					<button type="button" class="btn btn-outline-success mt-2" style="border-radius: 15px;">C 15.09</button>
-					<button type="button" class="btn btn-outline-secondary mt-2" style="border-radius: 15px;">2D</button>
-	  	</div>
-	  	<div class="text-center mt-2">
-	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
-	  		
-	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
-	  	</div>		
-    </div>
-  </div>	
- </div>
-		<div class="col-12 col-sm-4 col-md-4 col-lg-3">
- 	 <div class="card" style="background-color: #27272a; border: none; border-radius: 25px; max-height: 610px;">
-    <img class="card-img-top img-fluid mx-auto backlight" src="img/ee1a51f70d59bdb39b70ad51c668b961.jpg" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
-    <div class="card-body">
-     	<div class="text-center">
-     		<small class="voz-ograch">16+/RU</small>
-     	</div>
-      <h5 class="card-title name-film-oglav text-center">Веном</h5>
-      <div class="text-center">
-    		<small class="voz-ograch">Ужасы</small>
-     	</div>
-      	<div class="text-center">
-      		<button type="button" class="btn btn-outline-success mt-2" style="border-radius: 15px;">C 24.09</button>
-	  	</div>
-	  	<div class="text-center mt-2">
-	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
-	  		
-	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
-	  	</div>
-    </div>
-  </div>
- </div>
-		<div class="col-12 col-sm-4 col-md-4 col-lg-3">
-	<div class="card" style="background-color: #27272a; border: none; border-radius: 25px; max-height: 610px;"><!--text-white bg-dark--><!--border: solid red 1px-->
-    <img class="card-img-top img-fluid mx-auto backlight" src="img/5f55fad20e3f7a06b88c03e35894e1c4.jpg" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
-    <div class="card-body">
-     <div class="text-center">
-      		<small class="voz-ograch">16+/RU</small>
-      </div>
-      <h5 class="card-title name-film-oglav text-center">Богемская рапсодия</h5>
-		<div class="text-center">
-    		<small class="voz-ograch">Семейный</small>
-     	</div>
-      	<div class="text-center">
-      		<button type="button" class="btn btn-outline-success btn-outline-default" style="border-radius: 15px;">C 04.09</button>
-	  	</div>
-	  	<div class="text-center mt-2">
-				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-target="#exampleModalLong_film_1" id="raspiss" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
-				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-target="#exampleModalLong_film_1" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
-	  	</div>
-    </div>
-  </div> 	
- </div>
-		<div class="col-12 col-sm-4 col-md-4 col-lg-3">
-	<div class="card" style="background-color: #27272a; border: none; border-radius: 25px; max-height: 610px;"><!--text-white bg-dark--><!--border: solid red 1px-->
-    <img class="card-img-top img-fluid mx-auto backlight" src="img/5f55fad20e3f7a06b88c03e35894e1c4.jpg" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
-    <div class="card-body">
-     <div class="text-center">
-      		<small class="voz-ograch">16+/RU</small>
-      </div>
-      <h5 class="card-title name-film-oglav text-center">Богемская рапсодия</h5>
-		<div class="text-center">
-    		<small class="voz-ograch">Семейный</small>
-     	</div>
-      	<div class="text-center">
-      		<button type="button" class="btn btn-outline-success btn-outline-default">C 04.09</button>
-	  	</div>
-	  	<div class="text-center mt-2">
-	  	
-		<!--Start buttons modal-->
-		<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-toggle="modal" data-target="#exampleModalLong_film_1" style="border-radius: 20px; opacity: 0.9;" id="raspiss">Расписание</button>
-    			
-		<!--Modal window-->
-		<div class="modal fade bd-example-modal-lg" id="exampleModalLong_film_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-			<div class="modal-content">
-			  <div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Расписание сеансов</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				  <span aria-hidden="true">&times;</span>
-				</button>
-			  </div>
-			  <div class="modal-body">
-				<div class="text-left">Кинотеатр имени "Калинена"</div>
-					<div class="text-left">
-						<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
-						<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 14 по 21 ноября</button>
-						<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 21 по 8 декабря</button>
-					</div>
-				<div class="text-left">
-					Цена за билет:
-					<u>- на дневные сеансы (до 17:00) в будние дни:</u>
-					<p>1—14 ряд: 5 руб. 50 коп.</p>
-
-					<u>- на вечерние сеансы (с 17:00) в будние дни, сеансы в выходные и праздничные дни:</u>
-					<p>1—14 ряд: 6 руб. 50 коп.</p>
-
-					<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
-
-					<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
-				</div>
-
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
-				</div>
-			</div>
-		  </div>
-		</div>
-		<!--End modal window-->
-     			
-		<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#exampleModalLong_film_2" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
-			
-		<!--Modal-->
-		<div class="modal fade bd-example-modal-lg" id="exampleModalLong_film_2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		  <div class="modal-dialog modal-lg modal-dialog-centered">
-			<div class="modal-content">
-			<div class="modal-body">
-				<div class="text-left">
-					<p><strong>18+</strong></p>
-
-					<p><strong>Жанр:</strong>драма, биография, музыка</p>
-
-					<p><strong>Оригинальное название:</strong> Bohemian Rhapsody</p>
-					<p><strong>Год:</strong> 2018</p>
-					<p><strong>Страна:</strong> Великобритания, США
-					Режиссер: Брайан Сингер</p>
-
-					<div class="container" style="border-radius: 5px; background-color: #9B9B9B;"><p>Чествование группы Queen, их музыки и их выдающегося вокалиста Фредди Меркьюри, который бросил вызов стереотипам и победил условности, чтобы стать одним из самых любимых артистов на планете. Фильм прослеживает головокружительный путь группы к успеху, благодаря их культовым песням и революционному звуку, практически распад коллектива, поскольку образ жизни Меркьюри выходит из-под контроля, и их триумфальное воссоединение накануне концерта Live Aid, ставшим одним из величайших выступлений в истории рок-музыки.</p></div>
-				</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
-			 </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-    </div>
-  </div> 		
- </div>
-		<div class="col-12 col-sm-4 col-md-4 col-lg-3">
- 	<div class="card" style="background-color: #27272a; border: none; border-radius: 25px; max-height: 610px;">
-    <img class="card-img-top img-fluid mx-auto backlight" src="img/9749c521b21d[th9bd6a77.jpg" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
-    <div class="card-body">
-     	<div class="text-center">
-     		<small class="voz-ograch">18+/RU</small>
-     	</div>
-      	<h5 class="card-title name-film-oglav text-center">Bohemian Rhapsody</h5>
-        <div class="text-center">
-    		<small class="voz-ograch">Триллер</small>
-     	</div>
-      	<div class="text-center">
-      		<button type="button" class="btn btn-outline-success mt-2">C 15.09</button>
-	  	</div>
-	  	<div class="text-center mt-2">
-	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
-	  		
-	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
-	  	</div>		
-    </div>
-  </div>	
- </div>
-		<div class="col-12 col-sm-4 col-md-4 col-lg-3">
- 	 <div class="card" style="background-color: #27272a; border: none; border-radius: 25px; max-height: 610px;">
-    <img class="card-img-top img-fluid mx-auto backlight" src="img/ee1a51f70d59bdb39b70ad51c668b961.jpg" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
-    <div class="card-body">
-     	<div class="text-center">
-     		<small class="voz-ograch">16+/RU</small>
-     	</div>
-      <h5 class="card-title name-film-oglav text-center">Веном</h5>
-      <div class="text-center">
-    		<small class="voz-ograch">Ужасы</small>
-     	</div>
-      	<div class="text-center">
-      		<button type="button" class="btn btn-outline-success mt-2">C 24.09</button>
-	  	</div>
-	  	<div class="text-center mt-2">
-	  		<button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
-	  		
-	  		<button type="button" class="btn btn-danger mt-1" data-toggle="modal" data-target="#exampleModalLong_film" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
-	  	</div>
-    </div>
-  </div>
- </div>
-		<div class="col-12 col-sm-4 col-md-4 col-lg-3">
-	<div class="card" style="background-color: #27272a; border: none; border-radius: 25px; max-height: 610px;"><!--text-white bg-dark--><!--border: solid red 1px-->
-    <img class="card-img-top img-fluid mx-auto backlight" src="img/5f55fad20e3f7a06b88c03e35894e1c4.jpg" alt="Card image cap" style="border-radius: 25px; max-height: 400px; max-width: 280px;">
-    <div class="card-body">
-     <div class="text-center">
-      		<small class="voz-ograch">16+/RU</small>
-      </div>
-      <h5 class="card-title name-film-oglav text-center">Богемская рапсодия</h5>
-		<div class="text-center">
-    		<small class="voz-ograch">Семейный</small>
-    </div>
-      <div class="text-center">
-      		<button type="button" class="btn btn-outline-success btn-outline-default">C 04.09</button>
-	  	</div>
-	  	<div class="text-center mt-2">
-				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" style="border-radius: 20px; opacity: 0.9;">Расписание</button>		
-				<button type="button" class="btn btn-danger btn-box-shadow mt-1" style="border-radius: 20px; opacity: 0.9;">О фильме</button>		
-			</div>
-			</div>
-		</div>
-	</div>
+		
 		<div class="col-12 col-sm-4 col-md-4 col-lg-3" style="margin-top: 160px;">
 			<div class="card text-white bg-secondary" style="background-color: #27272a !important; border: none; border-radius: 25px;">
 				  <div class="card-body text-center">

@@ -185,7 +185,7 @@ button:focus
 {
 	.name-film-oglav
 	{
-        /*word-wrap: break-word;*/
+    /* word-wrap: break-word; */
 		overflow: hidden;
 		white-space: nowrap;
 	}
