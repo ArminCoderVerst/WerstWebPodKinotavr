@@ -112,7 +112,7 @@
 											while ($row = mysqli_fetch_array($qr)) {
 									?>
 										<!--отображение редактирования фото в слайдере-->
-										<div class="text-left" id="pic<?php echo $row["id"];?>">
+										<div class="text-left" id="pic<?php echo $row["id"]; ?>">
 											<!--отображения заголовка слайдера с бд-->
 											<span><?php echo $row["zagolovok_id"]; ?></span>
 												<!--значок на удаление из слайдера-->
@@ -363,7 +363,7 @@
 										<input type="text" class="form-control" id="Octob-data-pokaz6" placeholder="Введите дату показа">
 										<label for="exampleInputSession">Сеанс-(ы):</label>
 										<input type="text" class="form-control" id="Octob-session6" placeholder="Введите время сеанса">
-
+										
 										<label for="exampleInputDataReliz">Дата показа (7) :</label>
 										<input type="text" class="form-control" id="Octob-data-pokaz7" placeholder="Введите дату показа">
 										<label for="exampleInputSession">Сеанс-(ы):</label>
