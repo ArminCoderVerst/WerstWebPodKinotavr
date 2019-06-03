@@ -334,7 +334,7 @@
 							<div class="form-group">
 								<div class="col-auto col-sm-auto col-md-auto col-lg-auto">
 									<div class="row">
-									<label for="exampleInputDataReliz">Дата показа (1) :</label>
+										<label for="exampleInputDataReliz">Дата показа (1) :</label>
 										<input type="text" class="form-control" id="Octob-data-pokaz1" placeholder="Введите дату показа">
 										<label for="exampleInputSession">Сеанс-(ы):</label>
 										<input type="text" class="form-control" id="Octob-session1" placeholder="Введите время сеанса">
@@ -363,7 +363,7 @@
 										<input type="text" class="form-control" id="Octob-data-pokaz6" placeholder="Введите дату показа">
 										<label for="exampleInputSession">Сеанс-(ы):</label>
 										<input type="text" class="form-control" id="Octob-session6" placeholder="Введите время сеанса">
-										
+
 										<label for="exampleInputDataReliz">Дата показа (7) :</label>
 										<input type="text" class="form-control" id="Octob-data-pokaz7" placeholder="Введите дату показа">
 										<label for="exampleInputSession">Сеанс-(ы):</label>
