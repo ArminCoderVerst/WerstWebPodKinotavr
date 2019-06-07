@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="library/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="fonts/icons-style.css" rel="stylesheet" type="text/css">
 
@@ -177,16 +177,16 @@
 	
 <!--Start card kino-->
 <?php
-		$connect = mysqli_connect("localhost", "root", "123", "users_admi_kn") or die ("Error sql_connect");
+	$connect = mysqli_connect("localhost", "root", "123", "users_admi_kn") or die ("Error sql_connect");
 
-		$news = mysqli_query($connect, "SELECT * FROM film");
+	$news = mysqli_query($connect, "SELECT * FROM film ORDER BY id DESC");
 
-		$fims = [];
+	$fims = [];
 
-		while ($row = mysqli_fetch_array($news))
-		{
-			$films[] = $row;
-		}
+	while ($row = mysqli_fetch_array($news))
+	{
+		$films[] = $row;
+	}
 ?>
 <div class="container-fluid"><!--style="margin-top: 15px;"-->
 	<div class="row">
@@ -209,10 +209,10 @@
 				<div class="text-center mt-2">
 
 				<!--Start buttons modal-->
-				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-toggle="modal" data-target="#bogem" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
+				<button type="button" class="btn btn-primary mt-1 btn-box-shadow" data-toggle="modal" data-target="#window<?php echo $f; ?>" style="border-radius: 20px; opacity: 0.9;">Расписание</button>
 
 				<!--Modal window-->
-				<div class="modal fade bd-example-modal-xl" id="bogem" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal fade bd-example-modal-xl" id="window<?php echo $f; ?>" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
 					<div class="modal-content">
 					  <div class="modal-header">
@@ -222,17 +222,35 @@
 						</button>
 					  </div>
 					  <div class="modal-body">
+						  <?php
+							$rasp = mysqli_query($connect, "SELECT * FROM raspisanie WHERE raspisanie_id={$films[$f]["id"]}");
+
+							$mrows = mysqli_fetch_array($rasp);
+
+							$mr = $mrows["seans_mir"];
+							$kr = $mrows["seans_kalinina"];
+							$or = $mrows["seans_october"];
+						?>
 							
 						<div class="text-left font-weight-bold">Кинотеатр "Калинина"</div>
 							<div class="text-left">
-								<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
+								<!-- <button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
 								<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 14 по 21 ноября</button>
-								<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 21 по 8 декабря</button>
+								<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 21 по 8 декабря</button> -->
+								<?php
+									$krs = explode("|", $kr);
+									for($i = 0; $i < count($krs)-1; $i++) {
+										$dt = explode(";", $krs[$i]);
+										?>
+											<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="<?php echo $dt[1]; ?>"><?php echo $dt[0]; ?></button>
+										<?php
+									}
+								?>
 							</div>
 								<div class="text-left">
 									<p>Цена за билет:</p>
 									<u>- на дневные сеансы (до 17:00) в будние дни:</u>
-									<p>1—14 ряд: 5 руб. 50 коп.</p>
+									<p>1—14 ряд: <?php echo $mrows["cen_day_seans_id"]; ?></p>
 
 									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
 
@@ -255,9 +273,18 @@
 
 							<div class="text-left font-weight-bold">Кинотеатр "Октябрь"</div>
 								<div class="text-left">
-									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
-									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
-							</div>
+									<!-- <button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
+									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button> -->
+									<?php 
+										$krs = explode("|", $or);
+										for($i = 0; $i < count($krs)-1; $i++) {
+											$dt = explode(";", $krs[$i]);
+											?>
+												<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="<?php echo $dt[1]; ?>"><?php echo $dt[0]; ?></button>
+											<?php
+										}
+									?>
+								</div>
 							<div class="text-left">
 									<p>Цена за билет:</p>
 									<u>- на дневные сеансы (до 17:00) в будние дни:</u>
@@ -284,8 +311,17 @@
 
 							<div class="text-left font-weight-bold">Кинотеатр "Мир"</div>
 								<div class="text-left">
-									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
-									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
+									<?php
+										$krs = explode("|", $kr);
+										for($i = 0; $i < count($krs)-1; $i++) {
+											$dt = explode(";", $krs[$i]);
+											?>
+												<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="<?php echo $dt[1]; ?>"><?php echo $dt[0]; ?></button>
+											<?php
+										}
+									?>
+									<!-- <button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
+									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button> -->
 							</div>
 							<div class="text-left">
 									<p>Цена за билет:</p>
@@ -357,7 +393,7 @@
 			<div class="card text-white bg-secondary" style="background-color: #27272a !important; border: none; border-radius: 25px;">
 				  <div class="card-body text-center">
 						<h5 class="card-title">Не нашли фильм?</h5>
-						<button type="button" class="btn btn-primary mt-1" style="border-radius: 20px; opacity: 0.8;">завтра, 9 апреля</button>
+						<button type="button" class="btn btn-primary mt-1" style="border-radius: 20px; opacity: 0.8;">Сегодня в кино</button>
 						<button type="button" class="btn btn-danger mt-1" style="border-radius: 20px; opacity: 0.8;">Новости</button>
 				  </div>	
 			</div>

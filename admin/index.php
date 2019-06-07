@@ -156,7 +156,22 @@
 					  </div>
 					  <div class="modal-body">
 						<div class="form-group text-center">
-							...
+							<!--удаление карточки фильма-->
+							<?php
+								$delkin = mysqli_query($connection, "SELECT * FROM film");
+
+								if (mysqli_num_rows($delkin) > 0) {
+									while ($row = mysqli_fetch_array($delkin)) {
+							?>
+								<div class="text-left" id="kard<?php echo $row["id"]; ?>">
+									<span><?php echo $row["movie_title_id"]; ?></span>
+										<span style="cursor: pointer;" class="deleteFilms close" aria-label="Close" id_card_film="<?php echo $row["id"]; ?>">
+											<span aria-hidden="true">&times;</span>
+										</span>
+								</div>
+							<?php }
+								}
+							?>
 						</div>
 					  </div>
 					  <div class="modal-footer">
@@ -218,6 +233,10 @@
 							<div class="form-group">
 								<label for="exampleInputFormDY">Форма показа</label>
 								<input type="text" class="form-control" id="exampleInputFormDisplay" placeholder="Введите форму показа">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputLinkFilms">Ссылка на билет</label>
+								<input type="text" class="form-control" id="exampleInputLinkFilmsCinema" placeholder="Вставьте ссылку на билеты">
 							</div>
 							<div class="form-group">
 								<div class="dropdown" id="myDropdown">
@@ -548,6 +567,7 @@
 	<!--scripts add films-->
 	<script src="addPictureNews.js"></script>
 	<script src="unploadNewsFilms.js"></script>
+	<script src="deletefims.js"></script>
 	
 	<script>
 		//предпросмотр фото в слайдере
