@@ -227,9 +227,9 @@
 
 							$mrows = mysqli_fetch_array($rasp);
 
-							$mr = $mrows["seans_mir"];
-							$kr = $mrows["seans_kalinina"];
-							$or = $mrows["seans_october"];
+							$kalinina = $mrows["seans_kalinina"];
+							$october = $mrows["seans_october"];
+							$mir = $mrows["seans_mir"];
 						?>
 							
 						<div class="text-left font-weight-bold">Кинотеатр "Калинина"</div>
@@ -238,7 +238,7 @@
 								<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 14 по 21 ноября</button>
 								<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 21 по 8 декабря</button> -->
 								<?php
-									$krs = explode("|", $kr);
+									$krs = explode("|", $kalinina);
 									for($i = 0; $i < count($krs)-1; $i++) {
 										$dt = explode(";", $krs[$i]);
 										?>
@@ -276,7 +276,7 @@
 									<!-- <button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button>
 									<button type="button" class="btn btn-sm mt-1 btn-secondary" data-placement="bottom" data-toggle="popover" data-trigger="focus" title="Сеансы:" data-content="11:40, 13:20, 15:10, 16:50">С 8 по 14 ноября</button> -->
 									<?php 
-										$krs = explode("|", $or);
+										$krs = explode("|", $october);
 										for($i = 0; $i < count($krs)-1; $i++) {
 											$dt = explode(";", $krs[$i]);
 											?>
@@ -312,7 +312,7 @@
 							<div class="text-left font-weight-bold">Кинотеатр "Мир"</div>
 								<div class="text-left">
 									<?php
-										$krs = explode("|", $kr);
+										$krs = explode("|", $mir);
 										for($i = 0; $i < count($krs)-1; $i++) {
 											$dt = explode(";", $krs[$i]);
 											?>
