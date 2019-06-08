@@ -334,16 +334,43 @@
 							</div>
 							<div class="form-group">
 								<label for="exampleInputSession">Дневные сеансы</label>
-								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+								<textarea class="form-control" id="dayseanskalin" rows="1"></textarea>
 							</div>
+							<div class="form-group">
+								<label for="dayddlskalin">двухместный диван «Love Seat» (15 ряд, все сеансы)</label>
+								<textarea class="form-control" id="dayddlskalin" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="dayddstkalin">двухместный диван со столиком (VIP-ряд, все сеансы)</label>
+								<textarea class="form-control" id="dayddstkalin" rows="1"></textarea>
+							</div>
+							<div class="dropdown-divider"></div>
 							<div class="form-group">
 								<label for="exampleInputSession">Вечерние сеансы, в будние дни и все сеансы в выходные дни</label>
-								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+								<textarea class="form-control" id="vecherseanskalin" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Ночные сеансы</label>
-								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+								<label for="vecherddlskalin">двухместный диван «Love Seat» (15 ряд, все сеансы)</label>
+								<textarea class="form-control" id="vecherddlskalin" rows="1"></textarea>
 							</div>
+							<div class="form-group">
+								<label for="vecherddstkalin">двухместный диван со столиком (VIP-ряд, все сеансы)</label>
+								<textarea class="form-control" id="vecherddstkalin" rows="1"></textarea>
+							</div>
+							<div class="dropdown-divider"></div>
+							<div class="form-group">
+								<label for="exampleInputSession">Ночные сеансы</label>
+								<textarea class="form-control" id="cennaightkalin" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="nightddlskalin">двухместный диван «Love Seat» (15 ряд, все сеансы)</label>
+								<textarea class="form-control" id="nightddlskalin" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="nightddstkalin">двухместный диван со столиком (VIP-ряд, все сеансы)</label>
+								<textarea class="form-control" id="nightddstkalin" rows="1"></textarea>
+							</div>
+							<div class="dropdown-divider"></div>
 							<!--end repert kalinina-->
 							
 							<!--add repert October-->
@@ -409,17 +436,44 @@
 								<label class="font-weight-bold" for="exampleInputMany">Цены на билеты:</label>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Дневные сеансы</label>
-								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+								<label for="dayseansoctob">Дневные сеансы</label>
+								<textarea class="form-control" id="dayseansoctob" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Вечерние сеансы, в будние дни и все сеансы в выходные дни</label>
-								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+								<label for="dayddlsoctob">двухместный диван «Love Seat» (15 ряд, все сеансы)</label>
+								<textarea class="form-control" id="dayddlsoctob" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Ночные сеансы</label>
-								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+								<label for="dayddstoctob">двухместный диван со столиком (VIP-ряд, все сеансы)</label>
+								<textarea class="form-control" id="dayddstoctob" rows="1"></textarea>
 							</div>
+							<div class="dropdown-divider"></div>
+							<div class="form-group">
+								<label for="vecherseansoctob">Вечерние сеансы, в будние дни и все сеансы в выходные дни</label>
+								<textarea class="form-control" id="vecherseansoctob" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="vecherddlsoctob">двухместный диван «Love Seat» (15 ряд, все сеансы)</label>
+								<textarea class="form-control" id="vecherddlsoctob" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="vecherddstoctob">двухместный диван со столиком (VIP-ряд, все сеансы)</label>
+								<textarea class="form-control" id="vecherddstoctob" rows="1"></textarea>
+							</div>
+							<div class="dropdown-divider"></div>
+							<div class="form-group">
+								<label for="cennaightoctob">Ночные сеансы</label>
+								<textarea class="form-control" id="cennaightoctob" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="nightddlsoctob">двухместный диван «Love Seat» (15 ряд, все сеансы)</label>
+								<textarea class="form-control" id="nightddlsoctob" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="nightddstoctob">двухместный диван со столиком (VIP-ряд, все сеансы)</label>
+								<textarea class="form-control" id="nightddstoctob" rows="1"></textarea>
+							</div>
+							<div class="dropdown-divider"></div>
 							<!--end	add repert October-->
 							
 							<!--add repert Mir-->
@@ -485,17 +539,44 @@
 								<label class="font-weight-bold" for="exampleInputMany">Цены на билеты:</label>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Дневные сеансы</label>
-								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+								<label for="dayseansmir">Дневные сеансы</label>
+								<textarea class="form-control" id="dayseansmir" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Вечерние сеансы, в будние дни и все сеансы в выходные дни</label>
-								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+								<label for="dayddlsmir">двухместный диван «Love Seat» (15 ряд, все сеансы)</label>
+								<textarea class="form-control" id="dayddlsmir" rows="1"></textarea>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputSession">Ночные сеансы</label>
-								<textarea class="form-control" id="exampleInputMany" rows="1"></textarea>
+								<label for="dayddstmir">двухместный диван со столиком (VIP-ряд, все сеансы)</label>
+								<textarea class="form-control" id="dayddstmir" rows="1"></textarea>
 							</div>
+							<div class="dropdown-divider"></div>
+							<div class="form-group">
+								<label for="vecherseansmir">Вечерние сеансы, в будние дни и все сеансы в выходные дни</label>
+								<textarea class="form-control" id="vecherseansmir" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="vecherddlsmir">двухместный диван «Love Seat» (15 ряд, все сеансы)</label>
+								<textarea class="form-control" id="vecherddlsmir" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="vecherddstmir">двухместный диван со столиком (VIP-ряд, все сеансы)</label>
+								<textarea class="form-control" id="vecherddstmir" rows="1"></textarea>
+							</div>
+							<div class="dropdown-divider"></div>
+							<div class="form-group">
+								<label for="cennaightmir">Ночные сеансы</label>
+								<textarea class="form-control" id="cennaightmir" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="nightddlsmir">двухместный диван «Love Seat» (15 ряд, все сеансы)</label>
+								<textarea class="form-control" id="nightddlsmir" rows="1"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="nightddstmir">двухместный диван со столиком (VIP-ряд, все сеансы)</label>
+								<textarea class="form-control" id="nightddstmir" rows="1"></textarea>
+							</div>
+							<div class="dropdown-divider"></div>
 							<!--end add repert Mir-->
 							
 							<!--o films -->

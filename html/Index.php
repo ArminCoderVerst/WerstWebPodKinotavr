@@ -250,25 +250,25 @@
 								<div class="text-left">
 									<p>Цена за билет:</p>
 									<u>- на дневные сеансы (до 17:00) в будние дни:</u>
-									<p>1—14 ряд: <?php echo $mrows["cen_day_seans_id"]; ?></p>
+									<p>1—14 ряд: <?php echo $mrows["cen_day_seans_kalin_id"]; ?></p><!--6 руб. 00 коп.-->
 
-									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #FF00F5;"><?php echo $mrows["day_divan_love_seat_kalin_id"]?></span></p>
 
-									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #EC282B;"><?php echo $mrows["day_divan_stol_vip_kalin_id"]?></span></p>
 
 									<u>- на вечерние сеансы (с 17:00) в будние дни: сеансы в выходные и праздничные дни:</u>
-									<p>1—14 ряд: 6 руб. 50 коп.</p>
+									<p>1—14 ряд: <?php echo $mrows["cen_vecherni_seas_kalin_id"];?></p>
 
-									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #FF00F5;"><?php echo $mrows["vecherni_divan_love_seat_kalin_id"]?></span></p>
 
-									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #EC282B;"><?php echo $mrows["vecherni_divan_stol_vip_kalin_id"]?></span></p>
 
 									<u>- на ночные сеансы:</u>
-									<p>1—14 ряд: 6 руб. 50 коп.</p>
+									<p>1—14 ряд: <?php echo $mrows["cen_night_seans_kalin_id"];?></p>
 
-									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #FF00F5;"><?php echo $mrows["night_divan_love_seat_kalin_id"]?></span></p>
 
-									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #EC282B;"><?php echo $mrows["night_divan_stol_vip_kalin_id"]?></span></p>
 							</div>
 
 							<div class="text-left font-weight-bold">Кинотеатр "Октябрь"</div>
@@ -288,25 +288,25 @@
 							<div class="text-left">
 									<p>Цена за билет:</p>
 									<u>- на дневные сеансы (до 17:00) в будние дни:</u>
-									<p>1—14 ряд: 5 руб. 50 коп.</p>
+									<p>1—14 ряд: <?php echo $mrows["cen_day_seans_octob_id"]; ?></p>
 
-									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #FF00F5;"><?php echo $mrows["day_divan_love_seat_octob_id"]?></span></p>
 
-									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #EC282B;"><?php echo $mrows["day_divan_stol_vip_octob_id"]?></span></p>
 
 									<u>- на вечерние сеансы (с 17:00) в будние дни: сеансы в выходные и праздничные дни:</u>
-									<p>1—14 ряд: 6 руб. 50 коп.</p>
+									<p>1—14 ряд: <?php echo $mrows["cen_vecherni_seas_octob_id"]; ?></p>
 
-									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #FF00F5;"><?php echo $mrows["vecherni_divan_love_seat_octob_id"]?></span></p>
 
-									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #EC282B;"><?php echo $mrows["vecherni_divan_stol_vip_octob_id"]?></span></p>
 
 									<u>- на ночные сеансы:</u>
-									<p>1—14 ряд: 6 руб. 50 коп.</p>
+									<p>1—14 ряд: <?php echo $mrows["cen_night_seans_octob_id"]; ?></p>
 
-									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #FF00F5;"><?php echo $mrows["night_divan_love_seat_octob_id"]?></span></p>
 
-									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #EC282B;"><?php echo $mrows["night_divan_stol_vip_octob_id"]?></span></p>
 							</div>
 
 							<div class="text-left font-weight-bold">Кинотеатр "Мир"</div>
@@ -326,25 +326,24 @@
 							<div class="text-left">
 									<p>Цена за билет:</p>
 									<u>- на дневные сеансы (до 17:00) в будние дни:</u>
-									<p>1—14 ряд: 5 руб. 50 коп.</p>
+									<p>1—14 ряд: <?php echo $mrows["cen_day_seans_mir_id"]; ?></p>
 
-									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
-
-									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #FF00F5;"><?php echo $mrows["day_divan_love_seat_mir_id"]?></span></p>
+									<p><span style="color: #EC282B;"><?php echo $mrows["day_divan_stol_vip_mir_id"]?></span></p>
 
 									<u>- на вечерние сеансы (с 17:00) в будние дни: сеансы в выходные и праздничные дни:</u>
-									<p>1—14 ряд: 6 руб. 50 коп.</p>
+									<p>1—14 ряд: <?php echo $mrows["cen_vecherni_seas_mir_id"]; ?></p>
 
-									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #FF00F5;"><?php echo $mrows["vecherni_divan_love_seat_mir_id"]?></span></p>
 
-									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #EC282B;"><?php echo $mrows["vecherni_divan_stol_vip_mir_id"]?></span></p>
 
 									<u>- на ночные сеансы:</u>
-									<p>1—14 ряд: 6 руб. 50 коп.</p>
+									<p>1—14 ряд: <?php echo $mrows["cen_night_seans_mir_id"]; ?></p>
 
-									<p><span style="color: #FF00F5;">двухместный диван «Love Seat» (15 ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #FF00F5;"><?php echo $mrows["night_divan_love_seat_mir_id"]?></span></p>
 
-									<p><span style="color: #EC282B;">двухместный диван со столиком (VIP-ряд, все сеансы): 20 руб. 00 коп.</span></p>
+									<p><span style="color: #EC282B;"><?php echo $mrows["night_divan_stol_vip_mir_id"]?></span></p>
 							</div>
 						</div>
 						<div class="modal-footer">

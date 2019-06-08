@@ -6,6 +6,7 @@
         $id = trim($_POST['id']);
 
         mysqli_query($con, "DELETE FROM film WHERE id=$id");
+        mysqli_query($con, "DELETE FROM raspisanie WHERE raspisanie_id=$id");
 
     }
 ?>

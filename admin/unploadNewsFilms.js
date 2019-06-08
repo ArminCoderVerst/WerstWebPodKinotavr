@@ -1,12 +1,65 @@
 (function(){
 
     $("#NewsFilms").click(function(){
+        //карточка фильма
         let logofilms = $("#fileNameNewsLogo").val();
         let vozrast = $("#exampleInputVozLeng").val();
         let zagolstat = $("#exampleInputStat").val();
         let janr = $("#exampleInputJanr").val();
         let datapokaz = $("#exampleInputData").val();
         let formpokaz = $("#exampleInputFormDisplay").val();
+
+        //цены на день - вечер -ночь сеансы калинина
+        let dayseanskalin = $("#dayseanskalin").val();
+        let vecherseanskalin = $("#vecherseanskalin").val();
+        let cennaightkalin = $("#cennaightkalin").val();
+
+        //цены на дневны диваны калинина
+        let dayddlskalin = $("#dayddlskalin").val();
+        let dayddstkalin = $("#dayddstkalin").val();
+
+        //цены на вечернии диваны калинина
+        let vecherddlskalin = $("#vecherddlskalin").val();
+        let vecherddstkalin = $("#vecherddstkalin").val();
+
+        //цены на ночные диваны калинина
+        let nightddlskalin = $("#nightddlskalin").val();
+        let nightddstkalin = $("#nightddstkalin").val();
+
+        //цены на день - вечер -ночь сеансы октябрь
+        let dayseansoctob = $("#dayseansoctob").val();
+        let vecherseansoctob = $("#vecherseansoctob").val();
+        let cennaightoctob = $("#cennaightoctob").val();
+
+        //цены на дневны диваны октябрь
+        let dayddlsoctob = $("#dayddlsoctob").val();
+        let dayddstoctob = $("#dayddstoctob").val();
+
+        //цены на вечернии диваны октябрь
+        let vecherddlsoctob = $("#vecherddlsoctob").val();
+        let vecherddstoctob = $("#vecherddstoctob").val();
+
+        //цены на ночные диваны октябрь
+        let nightddlsoctob = $("#nightddlsoctob").val();
+        let nightddstoctob = $("#nightddstoctob").val();
+
+        //цены на день - вечер -ночь сеансы мир
+        let dayseansmir = $("#dayseansmir").val();
+        let vecherseansmir = $("#vecherseansmir").val();
+        let cennaightmir = $("#cennaightmir").val();
+
+        //цены на дневны диваны мир
+        let dayddlsmir = $("#dayddlsmir").val();
+        let dayddstmir = $("#dayddstmir").val();
+
+        //цены на вечернии диваны мир
+        let vecherddlsmir = $("#vecherddlsmir").val();
+        let vecherddstmir = $("#vecherddstmir").val();
+
+        //цены на ночные диваны мир
+        let nightddlsmir = $("#nightddlsmir").val();
+        let nightddstmir = $("#nightddstmir").val();
+
 
         if (logofilms == "" || vozrast == "" || zagolstat == "" || janr == "" || datapokaz == "" || formpokaz == "")
             return false;
@@ -226,7 +279,34 @@
                 formpokaz: formpokaz,
                 kalin_rasp: kalin_rasp,
                 octob_rasp: octob_rasp,
-                mir_rasp: mir_rasp
+                mir_rasp: mir_rasp,
+                dayseanskalin: dayseanskalin,
+                vecherseanskalin: vecherseanskalin,
+                cennaightkalin: cennaightkalin,
+                dayddlskalin: dayddlskalin,
+                dayddstkalin: dayddstkalin,
+                vecherddlskalin: vecherddlskalin,
+                vecherddstkalin: vecherddstkalin,
+                nightddlskalin: nightddlskalin,
+                nightddstkalin: nightddstkalin,
+                dayseansoctob: dayseansoctob,
+                vecherseansoctob: vecherseansoctob,
+                cennaightoctob: cennaightoctob,
+                dayddlsoctob: dayddlsoctob,
+                dayddstoctob: dayddstoctob,
+                vecherddlsoctob: vecherddlsoctob,
+                vecherddstoctob: vecherddstoctob,
+                nightddlsoctob: nightddlsoctob,
+                nightddstoctob: nightddstoctob,
+                dayseansmir: dayseansmir,
+                vecherseansmir: vecherseansmir,
+                cennaightmir: cennaightmir,
+                dayddlsmir: dayddlsmir,
+                dayddstmir: dayddstmir,
+                vecherddlsmir: vecherddlsmir,
+                vecherddstmir: vecherddstmir,
+                nightddlsmir: nightddlsmir,
+                nightddstmir: nightddstmir
                 
             },
             (e)=>{
