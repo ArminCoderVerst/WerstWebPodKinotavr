@@ -355,26 +355,35 @@
 				<!--End modal window-->
 
 				<!--Start buttons modal-->
-				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#exampleModalLong_film_1" id="films" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
+				<button type="button" class="btn btn-danger btn-box-shadow mt-1" data-toggle="modal" data-target="#podrob<?php echo $f; ?>" style="border-radius: 20px; opacity: 0.9;">О фильме</button>
 
 				<!--Modal-->
-				<div class="modal fade bd-example-modal-lg" id="exampleModalLong_film_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				<div class="modal fade bd-example-modal-lg" id="podrob<?php echo $f; ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-lg modal-dialog-centered">
 					<div class="modal-content">
 					<div class="modal-body">
+						<?php
+							$opis = mysqli_query($connect, "SELECT * FROM opisaniefilms WHERE o_films_id={$films[$f]["id"]}");
+
+							$filmsrows = mysqli_fetch_array($opis);
+
+							$vozrast = $filmsrows["vozrast_id"];
+							$janr = $filmsrows["janr_id"];
+							$originalname =  $filmsrows["original_name_id"];
+							$year = $filmsrows["year_id"];
+							$country = $filmsrows["country_id"];
+							$opisaniefilm = $filmsrows["opisanie_film_id"];
+						?>
 						<div class="text-left">
-							<?php 
-								$ofilms = mysqli_query($connect, "SELECT * FROM opisaniefilms");
-							?>
-							<p><strong>Возраст: </strong>18+</p>
+							<p><strong>Возраст: </strong><?php echo $filmsrows["vozrast_id"]?></p>
 
-							<p><strong>Жанр: </strong>драма, биография, музыка</p>
+							<p><strong>Жанр: </strong><?php echo $filmsrows["janr_id"]?></p>
 
-							<p><strong>Оригинальное название: </strong> Bohemian Rhapsody</p>
-							<p><strong>Год: </strong> 2018</p>
-							<p><strong>Страна: </strong> Великобритания, США Режиссер: Брайан Сингер</p>
+							<p><strong>Оригинальное название: </strong> <?php echo $filmsrows["original_name_id"]?></p>
+							<p><strong>Год: </strong> <?php echo $filmsrows["year_id"]?></p>
+							<p><strong>Страна: </strong> <?php echo $filmsrows["country_id"]?></p>
 
-							<div class="container" style="border-radius: 5px; background-color: #9B9B9B;"><p>Чествование группы Queen, их музыки и их выдающегося вокалиста Фредди Меркьюри, который бросил вызов стереотипам и победил условности, чтобы стать одним из самых любимых артистов на планете. Фильм прослеживает головокружительный путь группы к успеху, благодаря их культовым песням и революционному звуку, практически распад коллектива, поскольку образ жизни Меркьюри выходит из-под контроля, и их триумфальное воссоединение накануне концерта Live Aid, ставшим одним из величайших выступлений в истории рок-музыки.</p></div>
+							<div class="container" style="border-radius: 5px; background-color: #9B9B9B;"><p><?php echo $filmsrows["opisanie_film_id"]?></p></div>
 						</div>
 					</div>
 					<div class="modal-footer">

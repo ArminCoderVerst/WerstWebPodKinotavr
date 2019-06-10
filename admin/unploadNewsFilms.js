@@ -60,6 +60,13 @@
         let nightddlsmir = $("#nightddlsmir").val();
         let nightddstmir = $("#nightddstmir").val();
 
+        //описание фильма
+        let vozrastogranch = $("#vozrastogranch").val();
+        let janrfilm = $("#janr").val();
+        let originalname = $("#originalname").val();
+        let year = $("#year").val();
+        let country = $("#country").val();
+        let aboutfilms = $("#aboutfilms").val();
 
         if (logofilms == "" || vozrast == "" || zagolstat == "" || janr == "" || datapokaz == "" || formpokaz == "")
             return false;
@@ -306,7 +313,13 @@
                 vecherddlsmir: vecherddlsmir,
                 vecherddstmir: vecherddstmir,
                 nightddlsmir: nightddlsmir,
-                nightddstmir: nightddstmir
+                nightddstmir: nightddstmir,
+                vozrastogranch: vozrastogranch,
+                janrfilm: janrfilm,
+                originalname: originalname,
+                year: year,
+                country: country,
+                aboutfilms: aboutfilms
                 
             },
             (e)=>{

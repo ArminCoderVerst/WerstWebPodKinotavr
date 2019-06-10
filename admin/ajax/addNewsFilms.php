@@ -65,6 +65,14 @@
         $nightddlsmir = trim($_POST['nightddlsmir']);
         $nightddstmir = trim($_POST['nightddstmir']);
 
+        //описание фильма 
+        $vozrastogranch = trim($_POST['vozrastogranch']);
+        $janrfilm = trim($_POST['janrfilm']);
+        $originalname = trim($_POST['originalname']);
+        $year = trim($_POST['year']);
+        $country = trim($_POST['country']);
+        $aboutfilms = trim($_POST['aboutfilms']);
+
         //А ТУТ МНЕ НАДО ОБЪЯВИТЬ
 
 
@@ -78,5 +86,8 @@
 
         //--> СЮДА ЦЕНЫ ДОБАВИТЬ
         mysqli_query($connect, "INSERT INTO raspisanie(raspisanie_id, cen_day_seans_kalin_id, cen_vecherni_seas_kalin_id, cen_night_seans_kalin_id, day_divan_love_seat_kalin_id, day_divan_stol_vip_kalin_id, vecherni_divan_love_seat_kalin_id, vecherni_divan_stol_vip_kalin_id, night_divan_love_seat_kalin_id, night_divan_stol_vip_kalin_id, cen_day_seans_octob_id, cen_vecherni_seas_octob_id, cen_night_seans_octob_id, day_divan_love_seat_octob_id, day_divan_stol_vip_octob_id, vecherni_divan_love_seat_octob_id, vecherni_divan_stol_vip_octob_id, night_divan_love_seat_octob_id, night_divan_stol_vip_octob_id, cen_day_seans_mir_id, cen_vecherni_seas_mir_id, cen_night_seans_mir_id, day_divan_love_seat_mir_id, day_divan_stol_vip_mir_id, vecherni_divan_love_seat_mir_id, vecherni_divan_stol_vip_mir_id, night_divan_love_seat_mir_id, night_divan_stol_vip_mir_id, seans_october, seans_mir, seans_kalinina) VALUES({$id['id']}, '$dayseanskalin', '$vecherseanskalin', '$cennaightkalin', '$dayddlskalin', '$dayddstkalin', '$vecherddlskalin', '$vecherddstkalin', '$nightddlskalin', '$nightddstkalin', '$dayseansoctob', '$vecherseansoctob', '$cennaightoctob', '$dayddlsoctob', '$dayddstoctob', '$vecherddlsoctob', '$vecherddstoctob', '$nightddlsoctob', '$nightddstoctob', '$dayseansmir', '$vecherseansmir', '$cennaightmir', '$dayddlsmir', '$dayddstmir', '$vecherddlsmir', '$vecherddstmir', '$nightddlsmir', '$nightddlsmir', '$or', '$mr', '$kr')");
+
+        //--> СЮДА ОПИСАНИЕ
+        mysqli_query($connect, "INSERT INTO opisaniefilms(o_films_id, vozrast_id, janr_id, original_name_id, year_id, country_id, opisanie_film_id) VALUES({$id['id']}, '$vozrastogranch', '$janrfilm', '$originalname', '$year', '$country', '$aboutfilms')");
     }
 ?>

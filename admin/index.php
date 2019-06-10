@@ -584,28 +584,28 @@
 								<label for="exampleInputInfotmFilms" class="font-weight-bold">Информация о фильме</label>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputInformFilms">Возрастное ораничение</label>
-								<input type="text" class="form-control" id="exampleInputInformFilms" placeholder="Введите возрастное ограничение">
+								<label for="vozrastogranch">Возрастное ораничение</label>
+								<input type="text" class="form-control" id="vozrastogranch" placeholder="Введите возрастное ограничение">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputJanr">Жанр</label>
-								<input type="text" class="form-control" id="exampleInputJanr" placeholder="Введите жанр фильма">
+								<label for="janr">Жанр</label>
+								<input type="text" class="form-control" id="janr" placeholder="Введите жанр фильма">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputOriginalName">Оригинальное название</label>
-								<input type="text" class="form-control" id="exampleInputOriginalName" placeholder="Введите оригинальное название фильма">
+								<label for="originalname">Оригинальное название</label>
+								<input type="text" class="form-control" id="originalname" placeholder="Введите оригинальное название фильма">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputYear">Год</label>
-								<input type="text" class="form-control" id="exampleInputYear" placeholder="Введите год">
+								<label for="year">Год</label>
+								<input type="text" class="form-control" id="year" placeholder="Введите год">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputCountry">Страна</label>
-								<input type="text" class="form-control" id="exampleInputCountry" placeholder="Введите страну">
+								<label for="country">Страна</label>
+								<input type="text" class="form-control" id="country" placeholder="Введите страну">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputAboutFilms">Кратко о фильме</label>
-								<textarea class="form-control" id="exampleInputAboutFilms" rows="3"></textarea>
+								<label for="aboutfilms">Кратко о фильме</label>
+								<textarea class="form-control" id="aboutfilms" rows="3"></textarea>
 							</div>
 							<!--end o films -->
 						</div>
