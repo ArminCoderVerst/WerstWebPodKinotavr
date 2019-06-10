@@ -363,6 +363,9 @@
 					<div class="modal-content">
 					<div class="modal-body">
 						<div class="text-left">
+							<?php 
+								$ofilms = mysqli_query($connect, "SELECT * FROM opisaniefilms");
+							?>
 							<p><strong>Возраст: </strong>18+</p>
 
 							<p><strong>Жанр: </strong>драма, биография, музыка</p>
