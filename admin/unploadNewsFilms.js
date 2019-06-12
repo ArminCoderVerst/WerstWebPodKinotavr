@@ -1,6 +1,9 @@
 (function(){
 
     $("#NewsFilms").click(function(){
+
+        let hd = $("#hiddenUpdate").val();
+
         //карточка фильма
         let logofilms = $("#fileNameNewsLogo").val();
         let vozrast = $("#exampleInputVozLeng").val();
@@ -203,7 +206,7 @@
             kalin_rasp += kalin_data10 + ";" + kalin_tine10 + "|";
         
         //end kalin
-
+        
         if(october_data1 !== "" && october_time1 !== "")
            octob_rasp += october_data1 + ";" + october_time1 + "|";
 
@@ -274,10 +277,12 @@
 
         // //с 7 по 16 января;15:29, 18:89|
 
+        $("#hiddenUpdate").val("-1");
 
         $.post(
-            'ajax/addNewsFilms.php',
+            hd == -1 ? 'ajax/addNewsFilms.php' : 'ajax/LedZeppelin.php',
             {
+                id: hd,
                 logofilms: logofilms,
                 vozrast: vozrast,
                 zagolstat: zagolstat,

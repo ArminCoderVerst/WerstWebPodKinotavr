@@ -52,6 +52,7 @@
 			<a href="https://vk.com/kinotavr_gomel" class="link-click-social"><i class="icon-vk"></i></a>
 			<a href="https://www.facebook.com/kinotavr/" class="link-click-social"><i class="icon-facebook2"></i></a>
 			<a href="https://twitter.com/kinotavr_gomel" class="link-click-social"><i class="icon-twitter"></i></a>
+			<a href="https://www.instagram.com/kupkinotavr/" class="link-click-social"><i class="icon-instagram"></i></a>
 		</div>  
 	</div>
 </footer>

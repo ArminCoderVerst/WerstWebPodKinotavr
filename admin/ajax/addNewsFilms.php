@@ -75,13 +75,13 @@
 
         //А ТУТ МНЕ НАДО ОБЪЯВИТЬ
 
-
         $connect = mysqli_connect("127.0.0.1", "root", '123', "users_admi_kn") or die('Error sql_connect');
         
+        //--> СЮДА КАРТОЧКА ФИЛЬМА
         mysqli_query($connect, "INSERT INTO film(logo_films_id, vozrast_tongue_id, movie_title_id, genre_id, release_date_id, display_form_id, otborka) VALUES('$logofilms', '$vozrast', '$zagolstat', '$janr', '$datapokaz', '$formpokaz', '$otborka')");
         // mysqli_error($connect);
+        
         $q = mysqli_query($connect, "SELECT * FROM film WHERE id=LAST_INSERT_ID();");
-
         $id = mysqli_fetch_array($q);
 
         //--> СЮДА ЦЕНЫ ДОБАВИТЬ

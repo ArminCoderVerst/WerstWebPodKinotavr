@@ -304,6 +304,24 @@ button:focus
 	transition: 1s;
 	color: #1dcaff;
 }
+.icon-instagram
+{
+	font-size: 30px;
+	color: #f09433;
+	cursor: pointer;
+	opacity: 0.3;
+}
+.icon-instagram:hover
+{
+	transition: 1s;
+	color: #f09433;
+	opacity: 1;
+}
+.icon-instagram:not(:hover)
+{
+	transition: 1s;
+	color: #f09433;
+}
 /*transition social*/
 .link-click-social
 {

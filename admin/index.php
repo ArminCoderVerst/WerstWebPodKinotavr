@@ -60,7 +60,7 @@
 	<!--start content-->
 	<div class="container-fluid" style="margin-top: 53px;">
 		<div class="row">
-			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
+			<div class="col-12 col-sm-auto col-md-4 col-lg-4 mt-2">
 				<div class="card text-white bg-secondary hover-block-carousel" data-toggle="modal" data-target="#exampleModalcarousel">
 				  <div class="card-header">Добавить фото в слайдер</div>
 				  <div class="card-body">
@@ -135,9 +135,9 @@
 				  </div>
 				</div>
 			<!--end modal carousel-->
-			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
+			<div class="col-12 col-sm-auto col-md-4 col-lg-4 mt-2">
 				<div class="card text-white bg-secondary hover-block-editing" data-toggle="modal" data-target="#exampleModaleditingNew">
-				  <div class="card-header">Удаление новостей/статей</div>
+				  <div class="card-header">Удаление новостей</div>
 				  <div class="card-body">
 					<h5 class="card-title">Архив новостей/статей</h5>
 					<p class="card-text">Сдесь отображаються новости или какие либо спецпроекты, которые были добавлены на сайт.</p>
@@ -183,7 +183,7 @@
 				</div>
 			<!--emd modal editing-->
 
-			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
+			<div class="col-12 col-sm-auto col-md-4 col-lg-4 mt-2">
 				<div class="card text-white bg-secondary hover-block-add-news" data-toggle="modal" data-target="#exampleModaladdNews">
 				  <div class="card-header">Добавить новый фильм</div>
 				  <div class="card-body">
@@ -201,6 +201,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						  <span aria-hidden="true">&times;</span>
 						</button>
+						<input type="hidden" id="hiddenUpdate" value="-1"/>
 					  </div>
 					  <div class="modal-body">
 							<form id="form" action="#" method="post" enctype="multipart/form-data">
@@ -611,6 +612,19 @@
 						</div>
 						<div class="form-group text-center">
 								<label for="exampleInputRedNews" class="font-weight-bold">Редактирование новостей</label>
+								<?php
+									$rename = mysqli_query($connection, "SELECT * FROM film");
+
+									if(mysqli_num_rows($rename) > 0 ){
+										while ($row = mysqli_fetch_array($rename)){
+								?>
+									<div class="justify-content-start" id="rename<?php echo $row["id"];?>">
+										<span class="ml-3"><?php echo $row["movie_title_id"]?></span>
+										<button type="button" class="btn btn-link renamefilms" id_rename_films="<?php echo $row["id"]?>">Изменить</button>
+									</div>
+								<?php }
+									}
+								?>
 						</div>
 					  <div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -620,7 +634,7 @@
 				  </div>
 				</div>
 			<!--end modal add news-->
-			<div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
+			<!-- <div class="col-12 col-sm-auto col-md-4 col-lg-3 mt-2">
 				<div class="card text-white bg-primary">
 				  <div class="card-header">Header</div>
 				  <div class="card-body">
@@ -628,7 +642,7 @@
 					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 				  </div>
 				</div>
-			</div>
+			</div> -->
 		</div>	
 	</div>
 </main>
@@ -649,6 +663,7 @@
 	<script src="addPictureNews.js"></script>
 	<script src="unploadNewsFilms.js"></script>
 	<script src="deletefims.js"></script>
+	<script src="updateFilm.js"></script>
 	
 	<script>
 		//предпросмотр фото в слайдере
