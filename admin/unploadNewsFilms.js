@@ -194,13 +194,13 @@
             kalin_rasp += kalin_data6 + ";" + kalin_tine6 + "|";
 
         if (kalin_data7 !== "" && kalin_tine7 !== "")
-            kalin_rasp += kalin_data2 + ";" + kalin_tine2 + "|"; 
+            kalin_rasp += kalin_data7 + ";" + kalin_tine7 + "|"; 
             
         if (kalin_data8 !== "" && kalin_tine8 !== "")
-            kalin_rasp += kalin_data2 + ";" + kalin_tine2 + "|";
+            kalin_rasp += kalin_data8 + ";" + kalin_tine8 + "|";
             
         if (kalin_data9 !== "" && kalin_tine9 !== "")
-            kalin_rasp += kalin_data2 + ";" + kalin_tine2 + "|";
+            kalin_rasp += kalin_data9 + ";" + kalin_tine9 + "|";
         
         if (kalin_data10 !== "" && kalin_tine10 !== "")
             kalin_rasp += kalin_data10 + ";" + kalin_tine10 + "|";
@@ -330,6 +330,7 @@
             (e)=>{
                 alert("фильм добавлен!");
                 console.log(e); 
+                location.reload();
             }
         )
     });
