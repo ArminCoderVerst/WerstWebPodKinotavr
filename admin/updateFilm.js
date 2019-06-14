@@ -5,7 +5,7 @@
         $("#hiddenUpdate").val(curID);
 
         $.post(
-            "ajax/PinkFloyd.php",
+            "ajax/addValue.php",
             {
                 id: curID
             },

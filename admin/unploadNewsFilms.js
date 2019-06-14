@@ -280,7 +280,7 @@
         $("#hiddenUpdate").val("-1");
 
         $.post(
-            hd == -1 ? 'ajax/addNewsFilms.php' : 'ajax/LedZeppelin.php',
+            hd == -1 ? 'ajax/addNewsFilms.php' : 'ajax/addUpdate.php',
             {
                 id: hd,
                 logofilms: logofilms,
