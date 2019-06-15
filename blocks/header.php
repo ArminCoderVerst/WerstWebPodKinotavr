@@ -8,14 +8,14 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link lits_1" href="#">Главная<span class="sr-only">(current)</span></a>
+				<a class="nav-link lits_1" href="../html/Index.php">Главная<span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle lits_1 name_kino" href="#" id="navbarDropdownKinoteatr" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Кинотеатры</a>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item names_k" href="#">К-р "Калинина"</a>
-					<a class="dropdown-item names_k" href="#">К-р "Октябрь"</a>
-					<a class="dropdown-item names_k" href="#">К-р "Мир"</a>
+					<a class="dropdown-item names_k" href="../сinemas/Kalinina.php">К-р "Калинина"</a>
+					<a class="dropdown-item names_k" href="../сinemas/October.php">К-р "Октябрь"</a>
+					<a class="dropdown-item names_k" href="../сinemas/World.php">К-р "Мир"</a>
 				</div>
 			</li>
 			<li class="nav-item dropdown">
