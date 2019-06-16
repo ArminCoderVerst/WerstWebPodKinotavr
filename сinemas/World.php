@@ -19,17 +19,17 @@
         <section class="sec1"></section>
 			<div class="sec-text">
 				<h3 class="sec-text__title">Кинотеатр "Мир"</h3>
-				<p class="sec-text__dsc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="sec-text__dsc">В Гомеле по ул. Ильича, 51/Б находится кинотеатр "Мир" (Новобелицкий район), открытие которого состоялось в 1959 году. В 2012 году в "Мире" закончилась реставрация, здесь стали показывать современное кино, появилась возможность просмотра 3D фильмов.</p>
 			</div>
    		<section class="sec2"></section>
 			<div class="sec-text">
 				<h3 class="sec-text__title">Так же в "Мир" есть бар</h3>
-				<p class="sec-text__dsc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="sec-text__dsc">В фойе работает кинобар, где продаются прохладительные напитки, сладкая вата и попкорн.</p>
 			</div>
 		<section class="sec3"></section>
 			<div class="sec-text">
 				<h3 class="sec-text__title">Зал в кинотеатре "Мир"</h3>
-				<p class="sec-text__dsc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="sec-text__dsc">Сейчас в нем есть один кинозал и 2 видеозала, вместимостью от 6 до 198 мест. Большой зал "Мира" оснащен акустической системой Dolby Digital Surround, 3D системой Masterimage и цифровым кинопроектором Christie (Канада), позволяющим показывать фильмы в цифровом формате. Серебряный экран обладает эффектом светоотражения и прекрасно подходит для 3D контента. Особенностью кинотеатра "Мир" является VIP-зал, который рассчитан на 6 человек. Специальные акустические плиты в видеозале создают отличную звукоизоляцию. Гости могут сами выбирать фильм для просмотра из предложенного перечня, а также заказывать коктейли в баре кинотеатра.</p>
 			</div>
     </main>
     <!--Start footer-->

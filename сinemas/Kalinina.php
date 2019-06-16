@@ -20,17 +20,18 @@
         <section class="sec1"></section>
 			<div class="sec-text">
 				<h3 class="sec-text__title">Кинотеатр "Калинина"</h3>
-				<p class="sec-text__dsc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="sec-text__dsc">Кинотеатр имени Калинина расположен в самом центре города Гомеля, по улице Коммунаров, 4. Это один из первых кинотеатров в Гомеле, существует с 1907. Старое здание прилегало к гостинице. В 1947 году кинотеатр имени Калинина был реконструирован. В 1969 году здесь появился еще один холл. Кинотеатр регулярно предоставляет зрителям новинки кино и производит частое обновление киноафиши, поэтому желающие попасть в кинотеатр на премьеру фильма, приобретают билеты заранее. Кинотеатр им.Калинина ежегодно становится центром фестивальных событий в городе. Большое фойе кинотеатра украшают витражи, а в фойе малого зала работает ночной бар с очень кинематографическим названием - "Голливуд".
+				Каждую неделю расписание сеансов пополнятся новинками мирового проката.</p>
 			</div>
    		<section class="sec2"></section>
 			<div class="sec-text">
 				<h3 class="sec-text__title">Так же в "Калинина" есть бар</h3>
-				<p class="sec-text__dsc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="sec-text__dsc">В здании кинотеатра есть кафе "Cinema" со своим видеозалом на 44 человека, бар "Красная жара", ночной клуб "Cinema Club Hollywood". В фойе работает кинобар, где продаются прохладительные напитки, сладкая вата и традиционное блюдо кинолюбителей – попкорн.</p>
 			</div>
 		<section class="sec3"></section>
 			<div class="sec-text">
 				<h3 class="sec-text__title">Зал в кинотеатре "Калинина"</h3>
-				<p class="sec-text__dsc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="sec-text__dsc">Сегодня в кинотеатре им. Калинина функционируют один зал, рассчитанный на 512 мест. Зал оборудован системой Dolby и современным кинопроектором.</p>
 			</div>
     </main>
     <!--Start footer-->

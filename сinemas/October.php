@@ -20,17 +20,17 @@
         <section class="sec1"></section>
 			<div class="sec-text">
 				<h3 class="sec-text__title">Кинотеатр "Октябрь"</h3>
-				<p class="sec-text__dsc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="sec-text__dsc">Кинотеатр "Октябрь" в Гомеле был открыт в 1940 году в Советском районе города. После проведения капитального ремонта "Октябрь" преобразился и стал отвечать современным требованиям комфорта (удобные сидения, вентиляция воздуха и т.д.). Киносеансы проходят в просторном зале, в котором установлено отличное проекционное оборудование, акустическая система Dolby и идет просмотров фильмов в 3D и 2D формате. Сцена "Октября" оборудована вспомогательным боковым освещением.</p>
 			</div>
    		<section class="sec2"></section>
 			<div class="sec-text">
 				<h3 class="sec-text__title">Так же в "Октябрь" есть бар</h3>
-				<p class="sec-text__dsc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="sec-text__dsc">Работает и бильярдная клуб, а в фойе часто проводятся выставки фоторабот, живописи и камней-самоцветов. Купить билеты можно через интернет и в кассах кинотеатра на ул. Барыкина, 127.</p>
 			</div>
 		<section class="sec3"></section>
 			<div class="sec-text">
 				<h3 class="sec-text__title">Зал в кинотеатре "Октябрь"</h3>
-				<p class="sec-text__dsc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="sec-text__dsc">Сегодня в кинотеатре им. Октябрь функционируют один зал, рассчитанный на 200 мест. Зал оборудован системой Dolby и современным кинопроектором.</p>
 			</div>
     </main>
     <!--Start footer-->

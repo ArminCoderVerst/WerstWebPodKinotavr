@@ -4,13 +4,17 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:700&display=swap');
 
 /*add fonts Open Sans*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,500&display=swap');
+
+/*add fonts Roboto*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 
 
 @font-face
 {
 	font-family: 'Arvo', serif;
 	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	
 }
 	@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
@@ -47,20 +51,21 @@ section.sec3 {
 }
 /*общий текст в блоке*/
 .sec-text {
-	font-family: 'Open Sans', sans-serif;
 	color: white;
 	padding: 4% 8%;
 	height: auto;
 }
 /*заголовок кинотеатра*/
 .sec-text__title {
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
 	font-size: 2em;
 }
 /*альтернативный текст*/
 .sec-text__dsc {
-	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
 }
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section 
 {
