@@ -56,7 +56,7 @@
 			</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link lits_1" href="#">О нас</a>
+				<a class="nav-link lits_1" href="../сinemas/historyKalinina.php">О нас</a>
 			</li>
 		</ul>
 		<!-- <form class="form-inline my-2 my-lg-0">
