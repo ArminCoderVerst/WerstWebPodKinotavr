@@ -125,7 +125,7 @@
 	<div class="row">
 		<div class="col-12 col-lg-3 col-sm-12 col-md-6 mb-1">
 			<div class="dropdown">
-				<button class="btn ripple btn_open btn-default dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-location">Все кинотеатры, Гомель</i></button>
+				<button class="btn ripple btn_open btn-default dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-location"> Все кинотеатры, Гомель</i></button>
 				<div class="dropdown-menu dropdown-menu_open" aria-labelledby="dropdownMenuButton">
 					<a class="dropdown-item" href="#">К-р им."Калинина"</a>
 					<a class="dropdown-item" href="#">К-р "Октябрь"</a>
@@ -135,17 +135,17 @@
 		</div>
 		<div class="col-12 col-lg-3 col-sm-12 col-md-6 mb-1">
 			<div class="dropdown">
-				<button class="btn btn_open btn-default dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-calendar">Сегодня, 25 октября</i></button>
+				<button class="btn btn_open btn-default dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-calendar"> Дата сеанса</i></button>
 				<div class="dropdown-menu dropdown-menu_open" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#">Завтра, 26 октября</a>
-					<a class="dropdown-item" href="#">Суббота, 27 октября</a>
-					<a class="dropdown-item" href="#">Воскресенье, 28 октября</a>
+					<a class="dropdown-item" href="#">26 октября</a>
+					<a class="dropdown-item" href="#">27 октября</a>
+					<a class="dropdown-item" href="#">28 октября</a>
 				</div>
 			</div>
 		</div>
 		<div class="col-12 col-lg-3 col-sm-12 col-md-6 mb-1">
 			<div class="dropdown">
-					<button class="btn btn_open btn-default dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-clock">Все сеансы</i></button>
+					<button class="btn btn_open btn-default dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-clock"> Все сеансы</i></button>
 				<div class="dropdown-menu dropdown-menu_open" aria-labelledby="dropdownMenuButton">
 					<a class="dropdown-item" href="#">Утро, 10:00-13:00</a>
 					<a class="dropdown-item" href="#">День, 13:00-18:00</a>
@@ -156,7 +156,7 @@
 		</div>
 		<div class="col-12 col-lg-3 col-sm-12 col-md-6 mb-1"><!--offset-lg-2-->
 			<div class="dropdown">
-				<button class="btn btn_open btn-default dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-tv">Форма показа</i></button>
+				<button class="btn btn_open btn-default dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-tv"> Форма показа</i></button>
 				<div class="dropdown-menu dropdown-menu_open" aria-labelledby="dropdownMenuButton">
 					<form class="ml-1">
 						<div class="custom-control custom-checkbox">
