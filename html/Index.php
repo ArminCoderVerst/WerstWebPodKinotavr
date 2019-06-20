@@ -135,7 +135,11 @@
 		</div>
 		<div class="col-12 col-lg-3 col-sm-12 col-md-6 mb-1">
 			<div class="dropdown">
-				<button class="btn btn_open btn-default dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-calendar"> Дата сеанса</i></button>
+				<button class="btn btn_open btn-default dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-calendar"> Сейчас, <?
+					$arr = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+					$month = date('n')-1;
+					echo date('d').' '.$arr[$month];
+				?></i></button>
 				<div class="dropdown-menu dropdown-menu_open" aria-labelledby="dropdownMenuButton">
 					<a class="dropdown-item" href="#">26 октября</a>
 					<a class="dropdown-item" href="#">27 октября</a>
